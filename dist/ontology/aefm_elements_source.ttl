@@ -1,0 +1,587 @@
+@prefix id-label: <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sm-furn: <http://spacepatterns.com/ontologies/space_model/cultural_heritage/furnishing_funerary_monument_thebes_element_classes.owl#> .
+@prefix space-layout: <http://spacepatterns.com/ontologies/space_model/common/space_layout.owl#> .
+
+id-label:acronym a owl:AnnotationProperty .
+
+id-label:colorFill a owl:AnnotationProperty .
+
+id-label:colorStroke a owl:AnnotationProperty .
+
+id-label:domain a owl:AnnotationProperty .
+
+id-label:name a owl:AnnotationProperty .
+
+id-label:scope a owl:AnnotationProperty .
+
+id-label:weight a owl:AnnotationProperty .
+
+<http://spacepatterns.com/ontologies/space_model/cultural_heritage/furnishing_funerary_monument_thebes_element_classes.owl> a owl:Ontology ;
+    id-label:domain "furnishing" ;
+    id-label:scope "space element classes" ;
+    owl:imports <http://spacepatterns.com/ontologies/space_model/common/space_layout.owl> .
+
+sm-furn:Agriculture a owl:Class ;
+    id-label:acronym "Agr" ;
+    rdfs:subClassOf sm-furn:FabricationAndProduction .
+
+sm-furn:Altar a owl:Class ;
+    id-label:acronym "Alt" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:Anubis a owl:Class ;
+    id-label:acronym "Anu" ;
+    rdfs:subClassOf sm-furn:God .
+
+sm-furn:BarkCarrier a owl:Class ;
+    id-label:acronym "BarkC" ;
+    rdfs:subClassOf sm-furn:StandingMan .
+
+sm-furn:Beekeeping a owl:Class ;
+    id-label:acronym "BeeK" ;
+    rdfs:subClassOf sm-furn:FabricationAndProduction .
+
+sm-furn:Biography a owl:Class ;
+    id-label:acronym "Biog" ;
+    rdfs:subClassOf sm-furn:Text .
+
+sm-furn:BirdHunt a owl:Class ;
+    id-label:acronym "BirdH" ;
+    rdfs:subClassOf sm-furn:FabricationAndProduction .
+
+sm-furn:BookOfEarth a owl:Class ;
+    id-label:acronym "BkEth" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:BookOfNut,
+        sm-furn:BookOfTheAmduat,
+        sm-furn:BookOfTheDead,
+        sm-furn:BookOfTheGates,
+        sm-furn:BookOfTheNight,
+        sm-furn:BooksOfTheNetherworld,
+        sm-furn:CoffinText,
+        sm-furn:OpeningOfTheMouth,
+        sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:BullOfSky a owl:Class ;
+    id-label:acronym "BullSky" ;
+    rdfs:subClassOf sm-furn:FuneraryScene .
+
+sm-furn:BurntOffering a owl:Class ;
+    id-label:acronym "BurntOff" ;
+    rdfs:subClassOf sm-furn:GodOffering .
+
+sm-furn:Cabinet a owl:Class ;
+    id-label:acronym "Cab" ;
+    rdfs:subClassOf sm-furn:StorageElement .
+
+sm-furn:CavettoCornice a owl:Class ;
+    id-label:acronym "CavCor" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:CowWorking a owl:Class ;
+    id-label:acronym "CowW" ;
+    rdfs:subClassOf sm-furn:FabricationAndProduction .
+
+sm-furn:Curse a owl:Class ;
+    id-label:acronym "Crs" ;
+    rdfs:subClassOf sm-furn:Text .
+
+sm-furn:Dancers a owl:Class ;
+    id-label:acronym "Danc" ;
+    rdfs:subClassOf sm-furn:MusicAndDance .
+
+sm-furn:Doorframe a owl:Class ;
+    id-label:acronym "DFrame" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:FalseDoor a owl:Class ;
+    id-label:acronym "FalseD" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:Fishing a owl:Class ;
+    id-label:acronym "Fish" ;
+    rdfs:subClassOf sm-furn:FabricationAndProduction .
+
+sm-furn:GeometricPattern a owl:Class ;
+    id-label:acronym "GeoPatt" ;
+    rdfs:subClassOf sm-furn:Scene .
+
+sm-furn:HathorStatue a owl:Class ;
+    id-label:acronym "HaStat" ;
+    rdfs:subClassOf sm-furn:GodStatue ;
+    owl:disjointWith sm-furn:IsisStatue,
+        sm-furn:MaatStatue,
+        sm-furn:NeithStatue,
+        sm-furn:NephthysStatue,
+        sm-furn:NutStatue,
+        sm-furn:OsirisStatue,
+        sm-furn:SelketStatue,
+        sm-furn:ShentayetStatue .
+
+sm-furn:HouseOFGold a owl:Class ;
+    id-label:acronym "HGd" ;
+    rdfs:subClassOf sm-furn:Chapel ;
+    owl:disjointWith sm-furn:HouseOfNatron,
+        sm-furn:PreparingIdealMummy .
+
+sm-furn:HtpdjnjswtOffering a owl:Class ;
+    id-label:acronym "HtpOff" ;
+    rdfs:subClassOf sm-furn:Offering .
+
+sm-furn:JourneyToAbydos a owl:Class ;
+    id-label:acronym "JrneAb" ;
+    rdfs:subClassOf sm-furn:FuneraryScene .
+
+sm-furn:KneeingMan a owl:Class ;
+    id-label:acronym "KnMan" ;
+    rdfs:subClassOf sm-furn:Owner .
+
+sm-furn:LitanyOfRe a owl:Class ;
+    id-label:acronym "LitRe" ;
+    rdfs:subClassOf sm-furn:FuneraryText .
+
+sm-furn:ManInFrontOfOfferingTable a owl:Class ;
+    id-label:acronym "ManOffTb" ;
+    rdfs:subClassOf sm-furn:SittingMan .
+
+sm-furn:MortuaryOffering a owl:Class ;
+    id-label:acronym "MortOff" ;
+    rdfs:subClassOf sm-furn:Offering .
+
+sm-furn:Mother a owl:Class ;
+    id-label:acronym "Moth" ;
+    rdfs:subClassOf sm-furn:Woman .
+
+sm-furn:MummifiedGod a owl:Class ;
+    id-label:acronym "MumGod" ;
+    rdfs:subClassOf sm-furn:God .
+
+sm-furn:Musicians a owl:Class ;
+    id-label:acronym "Mus" ;
+    rdfs:subClassOf sm-furn:MusicAndDance .
+
+sm-furn:OfferingBearers a owl:Class ;
+    id-label:acronym "OffBear" ;
+    rdfs:subClassOf sm-furn:GoodOffering .
+
+sm-furn:OfferingList a owl:Class ;
+    id-label:acronym "OffL" ;
+    rdfs:subClassOf sm-furn:Offering .
+
+sm-furn:OfferingTable a owl:Class ;
+    id-label:acronym "OffTb" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:OfferingWater a owl:Class ;
+    id-label:acronym "OffW" ;
+    rdfs:subClassOf sm-furn:GoodOffering .
+
+sm-furn:OldMan a owl:Class ;
+    id-label:acronym "OldM" ;
+    rdfs:subClassOf sm-furn:StandingMan .
+
+sm-furn:Osiris a owl:Class ;
+    id-label:acronym "Osir" ;
+    rdfs:subClassOf sm-furn:God .
+
+sm-furn:OsirisNiche a owl:Class ;
+    id-label:acronym "OsNich" ;
+    rdfs:subClassOf sm-furn:Niche .
+
+sm-furn:OwnerInFrontOfTable a owl:Class ;
+    id-label:acronym "OwnTb" ;
+    rdfs:subClassOf sm-furn:GoodOffering .
+
+sm-furn:Priests a owl:Class ;
+    id-label:acronym "Prie" ;
+    rdfs:subClassOf sm-furn:GoodOffering .
+
+sm-furn:Re a owl:Class ;
+    id-label:acronym "Re" ;
+    rdfs:subClassOf sm-furn:God .
+
+sm-furn:ReAtum a owl:Class ;
+    id-label:acronym "ReAt" ;
+    rdfs:subClassOf sm-furn:GodOffering .
+
+sm-furn:Seat a owl:Class ;
+    id-label:acronym "Seat" ;
+    id-label:colorFill "rgb(185, 158, 101)" ;
+    id-label:colorStroke "rgb(185, 158, 101)" ;
+    id-label:weight "10" ;
+    rdfs:subClassOf sm-furn:FurnishingElement .
+
+sm-furn:SeatedMan a owl:Class ;
+    id-label:acronym "SeatMan" ;
+    rdfs:subClassOf sm-furn:OwnerStatue .
+
+sm-furn:Shrine a owl:Class ;
+    id-label:acronym "Shrine" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:Stela a owl:Class ;
+    id-label:acronym "Stela" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:Table a owl:Class ;
+    id-label:acronym "Table" ;
+    id-label:colorFill "rgb(185, 158, 101)" ;
+    id-label:colorStroke "rgb(185, 158, 101)" ;
+    id-label:weight "10" ;
+    rdfs:subClassOf sm-furn:FurnishingElement .
+
+sm-furn:Titularies a owl:Class ;
+    id-label:acronym "Tit" ;
+    rdfs:subClassOf sm-furn:Text .
+
+sm-furn:TorusMouldingAndCavettoCornice a owl:Class ;
+    id-label:acronym "TorMCavC" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:UnclassifiedText a owl:Class ;
+    id-label:acronym "UnclTxt" ;
+    rdfs:subClassOf sm-furn:Text .
+
+sm-furn:UnknownDecorationObject a owl:Class ;
+    id-label:acronym "UnknDO" ;
+    rdfs:subClassOf sm-furn:DecorationElement .
+
+sm-furn:UnknownScene a owl:Class ;
+    id-label:acronym "UnknSce" ;
+    rdfs:subClassOf sm-furn:Scene .
+
+sm-furn:Wife a owl:Class ;
+    id-label:acronym "Wife" ;
+    rdfs:subClassOf sm-furn:Woman .
+
+sm-furn:WineMaking a owl:Class ;
+    id-label:acronym "WineM" ;
+    rdfs:subClassOf sm-furn:FabricationAndProduction .
+
+sm-furn:WomanInFrontOfOfferingTable a owl:Class ;
+    id-label:acronym "WomOffTb" ;
+    rdfs:subClassOf sm-furn:SittingWoman .
+
+sm-furn:YoungMan a owl:Class ;
+    id-label:acronym "YounM" ;
+    rdfs:subClassOf sm-furn:StandingMan .
+
+sm-furn:BookOfNut a owl:Class ;
+    id-label:acronym "BkNut" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:BookOfTheAmduat,
+        sm-furn:BookOfTheDead,
+        sm-furn:BookOfTheGates,
+        sm-furn:BookOfTheNight,
+        sm-furn:BooksOfTheNetherworld,
+        sm-furn:CoffinText,
+        sm-furn:OpeningOfTheMouth,
+        sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:HouseOfNatron a owl:Class ;
+    id-label:acronym "HNa" ;
+    rdfs:subClassOf sm-furn:Chapel ;
+    owl:disjointWith sm-furn:PreparingIdealMummy .
+
+sm-furn:IsisStatue a owl:Class ;
+    id-label:acronym "IsStat" ;
+    rdfs:subClassOf sm-furn:GodStatue ;
+    owl:disjointWith sm-furn:MaatStatue,
+        sm-furn:NeithStatue,
+        sm-furn:NephthysStatue,
+        sm-furn:NutStatue,
+        sm-furn:OsirisStatue,
+        sm-furn:SelketStatue,
+        sm-furn:ShentayetStatue .
+
+sm-furn:Niche a owl:Class ;
+    id-label:acronym "Nich" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:OwnerStatue a owl:Class ;
+    id-label:acronym "OwnStat" ;
+    rdfs:subClassOf sm-furn:Statue .
+
+sm-furn:Sculpture a owl:Class ;
+    id-label:acronym "Scul" ;
+    rdfs:subClassOf space-layout:SpaceElement .
+
+sm-furn:SittingMan a owl:Class ;
+    id-label:acronym "SitMan" ;
+    rdfs:subClassOf sm-furn:Owner .
+
+sm-furn:SittingWoman a owl:Class ;
+    id-label:acronym "SitWom" ;
+    rdfs:subClassOf sm-furn:Owner .
+
+sm-furn:StorageElement a owl:Class ;
+    id-label:acronym "Stor" ;
+    id-label:colorFill "rgb(185, 158, 101)" ;
+    id-label:colorStroke "rgb(185, 158, 101)" ;
+    id-label:weight "10" ;
+    rdfs:subClassOf sm-furn:FurnishingElement .
+
+sm-furn:BookOfTheAmduat a owl:Class ;
+    id-label:acronym "Amduat" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:BookOfTheDead,
+        sm-furn:BookOfTheGates,
+        sm-furn:BookOfTheNight,
+        sm-furn:BooksOfTheNetherworld,
+        sm-furn:CoffinText,
+        sm-furn:OpeningOfTheMouth,
+        sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:DailyLifeScene a owl:Class ;
+    id-label:acronym "DLifeSce" ;
+    rdfs:subClassOf sm-furn:Scene .
+
+sm-furn:FuneraryScene a owl:Class ;
+    id-label:acronym "FunSce" ;
+    rdfs:subClassOf sm-furn:Scene .
+
+sm-furn:GodOffering a owl:Class ;
+    id-label:acronym "GodOff" ;
+    rdfs:subClassOf sm-furn:Offering .
+
+sm-furn:MaatStatue a owl:Class ;
+    id-label:acronym "MaStat" ;
+    rdfs:subClassOf sm-furn:GodStatue ;
+    owl:disjointWith sm-furn:NeithStatue,
+        sm-furn:NephthysStatue,
+        sm-furn:NutStatue,
+        sm-furn:OsirisStatue,
+        sm-furn:SelketStatue,
+        sm-furn:ShentayetStatue .
+
+sm-furn:MusicAndDance a owl:Class ;
+    id-label:acronym "MusDan" ;
+    rdfs:subClassOf sm-furn:DailyLifeScene .
+
+sm-furn:PreparingIdealMummy a owl:Class ;
+    id-label:acronym "HMmy" ;
+    rdfs:subClassOf sm-furn:Chapel .
+
+sm-furn:Statue a owl:Class ;
+    id-label:acronym "Stat" ;
+    rdfs:subClassOf sm-furn:Sculpture .
+
+sm-furn:Woman a owl:Class ;
+    id-label:acronym "Wom" ;
+    rdfs:subClassOf sm-furn:Owner .
+
+space-layout:SpaceElement a owl:Class .
+
+sm-furn:BookOfTheDead a owl:Class ;
+    id-label:acronym "BkOfDd" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:BookOfTheGates,
+        sm-furn:BookOfTheNight,
+        sm-furn:BooksOfTheNetherworld,
+        sm-furn:CoffinText,
+        sm-furn:OpeningOfTheMouth,
+        sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:Chapel a owl:Class ;
+    id-label:acronym "Chpl" ;
+    rdfs:subClassOf sm-furn:ArchitecturalDecoration .
+
+sm-furn:FurnishingElement a owl:Class ;
+    id-label:acronym "Furn" ;
+    id-label:colorFill "rgb(185, 158, 101)" ;
+    id-label:colorStroke "rgb(185, 158, 101)" ;
+    id-label:weight "10" ;
+    rdfs:subClassOf space-layout:SpaceElement .
+
+sm-furn:NeithStatue a owl:Class ;
+    id-label:acronym "NeStat" ;
+    rdfs:subClassOf sm-furn:GodStatue ;
+    owl:disjointWith sm-furn:NephthysStatue,
+        sm-furn:NutStatue,
+        sm-furn:OsirisStatue,
+        sm-furn:SelketStatue,
+        sm-furn:ShentayetStatue .
+
+sm-furn:StandingMan a owl:Class ;
+    id-label:acronym "StMan" ;
+    rdfs:subClassOf sm-furn:Owner .
+
+sm-furn:BookOfTheGates a owl:Class ;
+    id-label:acronym "BkGts" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:BookOfTheNight,
+        sm-furn:BooksOfTheNetherworld,
+        sm-furn:CoffinText,
+        sm-furn:OpeningOfTheMouth,
+        sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:DecorationElement a owl:Class ;
+    id-label:acronym "Dec" ;
+    id-label:colorFill "rgb(185, 158, 101)" ;
+    id-label:colorStroke "rgb(185, 158, 101)" ;
+    id-label:weight "10" ;
+    rdfs:subClassOf space-layout:SpaceElement .
+
+sm-furn:God a owl:Class ;
+    id-label:acronym "God" ;
+    rdfs:subClassOf sm-furn:Scene .
+
+sm-furn:GoodOffering a owl:Class ;
+    id-label:acronym "GoodOff" ;
+    rdfs:subClassOf sm-furn:Offering .
+
+sm-furn:NephthysStatue a owl:Class ;
+    id-label:acronym "NeStat" ;
+    rdfs:subClassOf sm-furn:GodStatue ;
+    owl:disjointWith sm-furn:NutStatue,
+        sm-furn:OsirisStatue,
+        sm-furn:SelketStatue,
+        sm-furn:ShentayetStatue .
+
+sm-furn:BookOfTheNight a owl:Class ;
+    id-label:acronym "BkNt" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:BooksOfTheNetherworld,
+        sm-furn:CoffinText,
+        sm-furn:OpeningOfTheMouth,
+        sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:NutStatue a owl:Class ;
+    id-label:acronym "NutStat" ;
+    rdfs:subClassOf sm-furn:GodStatue ;
+    owl:disjointWith sm-furn:OsirisStatue,
+        sm-furn:SelketStatue,
+        sm-furn:ShentayetStatue .
+
+sm-furn:Offering a owl:Class ;
+    id-label:acronym "OffSc" ;
+    rdfs:subClassOf sm-furn:Scene .
+
+sm-furn:Owner a owl:Class ;
+    id-label:acronym "Own" ;
+    rdfs:subClassOf sm-furn:Scene .
+
+sm-furn:Text a owl:Class ;
+    id-label:acronym "Txt" ;
+    rdfs:subClassOf sm-furn:DecorationElement .
+
+sm-furn:BooksOfTheNetherworld a owl:Class ;
+    id-label:acronym "BkNwld" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:CoffinText,
+        sm-furn:OpeningOfTheMouth,
+        sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:FabricationAndProduction a owl:Class ;
+    id-label:acronym "FabProd" ;
+    rdfs:subClassOf sm-furn:DailyLifeScene .
+
+sm-furn:OsirisStatue a owl:Class ;
+    id-label:acronym "OsStat" ;
+    rdfs:subClassOf sm-furn:GodStatue ;
+    owl:disjointWith sm-furn:SelketStatue,
+        sm-furn:ShentayetStatue .
+
+sm-furn:CoffinText a owl:Class ;
+    id-label:acronym "CoffTxt" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:OpeningOfTheMouth,
+        sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:Scene a owl:Class ;
+    id-label:acronym "Sce" ;
+    rdfs:subClassOf sm-furn:DecorationElement .
+
+sm-furn:SelketStatue a owl:Class ;
+    id-label:acronym "SeStat" ;
+    rdfs:subClassOf sm-furn:GodStatue ;
+    owl:disjointWith sm-furn:ShentayetStatue .
+
+sm-furn:OpeningOfTheMouth a owl:Class ;
+    id-label:acronym "BkMth" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:PyramidText,
+        sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:ShentayetStatue a owl:Class ;
+    id-label:acronym "SheStat" ;
+    rdfs:subClassOf sm-furn:GodStatue .
+
+sm-furn:GodStatue a owl:Class ;
+    id-label:acronym "GodStat" ;
+    rdfs:subClassOf sm-furn:Statue .
+
+sm-furn:PyramidText a owl:Class ;
+    id-label:acronym "PyrTxt" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:RitualOfHoursOfTheDay,
+        sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:ArchitecturalDecoration a owl:Class ;
+    id-label:acronym "ArchDec" ;
+    rdfs:subClassOf sm-furn:DecorationElement .
+
+sm-furn:RitualOfHoursOfTheDay a owl:Class ;
+    id-label:acronym "RitDay" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:RitualOfHoursOfTheNight,
+        sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:RitualOfHoursOfTheNight a owl:Class ;
+    id-label:acronym "RitNt" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:SolarHymn,
+        sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:SolarHymn a owl:Class ;
+    id-label:acronym "SolHy" ;
+    rdfs:subClassOf sm-furn:FuneraryText ;
+    owl:disjointWith sm-furn:UnclassifiedFuneraryText .
+
+sm-furn:UnclassifiedFuneraryText a owl:Class ;
+    id-label:acronym "UnclFTxt" ;
+    rdfs:subClassOf sm-furn:FuneraryText .
+
+sm-furn:FuneraryText a owl:Class ;
+    id-label:acronym "FunTxt" ;
+    rdfs:subClassOf sm-furn:Text .

@@ -1,0 +1,18 @@
+# --- Python ---
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Local only ---
+config.local.json
+
+# --- Note ---
+# dist/ and docs/ hold the repository's versioned, citable products and are NOT ignored.

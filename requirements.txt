@@ -1,0 +1,5 @@
+# Ontology and graph steps
+rdflib>=7.0
+# Figures only; the pipeline steps above do not need these.
+resvg-py>=0.2
+pillow>=10

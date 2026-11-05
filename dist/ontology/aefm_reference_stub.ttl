@@ -1,0 +1,39 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> a owl:AnnotationProperty ;
+    rdfs:comment "Reconstructed from its use in the element-class ontology; not the original definition. The original has to come from its author, Georg Suter (TU Wien)."@en ;
+    rdfs:isDefinedBy <http://spacepatterns.com/ontologies/space_model/common/id_label.owl> .
+
+<http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorFill> a owl:AnnotationProperty ;
+    rdfs:comment "Reconstructed from its use in the element-class ontology; not the original definition. The original has to come from its author, Georg Suter (TU Wien)."@en ;
+    rdfs:isDefinedBy <http://spacepatterns.com/ontologies/space_model/common/id_label.owl> .
+
+<http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorStroke> a owl:AnnotationProperty ;
+    rdfs:comment "Reconstructed from its use in the element-class ontology; not the original definition. The original has to come from its author, Georg Suter (TU Wien)."@en ;
+    rdfs:isDefinedBy <http://spacepatterns.com/ontologies/space_model/common/id_label.owl> .
+
+<http://spacepatterns.com/ontologies/space_model/common/id_label.owl#domain> a owl:AnnotationProperty ;
+    rdfs:comment "Reconstructed from its use in the element-class ontology; not the original definition. The original has to come from its author, Georg Suter (TU Wien)."@en ;
+    rdfs:isDefinedBy <http://spacepatterns.com/ontologies/space_model/common/id_label.owl> .
+
+<http://spacepatterns.com/ontologies/space_model/common/id_label.owl#name> a owl:AnnotationProperty ;
+    rdfs:comment "Reconstructed from its use in the element-class ontology; not the original definition. The original has to come from its author, Georg Suter (TU Wien)."@en ;
+    rdfs:isDefinedBy <http://spacepatterns.com/ontologies/space_model/common/id_label.owl> .
+
+<http://spacepatterns.com/ontologies/space_model/common/id_label.owl#scope> a owl:AnnotationProperty ;
+    rdfs:comment "Reconstructed from its use in the element-class ontology; not the original definition. The original has to come from its author, Georg Suter (TU Wien)."@en ;
+    rdfs:isDefinedBy <http://spacepatterns.com/ontologies/space_model/common/id_label.owl> .
+
+<http://spacepatterns.com/ontologies/space_model/common/id_label.owl#weight> a owl:AnnotationProperty ;
+    rdfs:comment "Reconstructed from its use in the element-class ontology; not the original definition. The original has to come from its author, Georg Suter (TU Wien)."@en ;
+    rdfs:isDefinedBy <http://spacepatterns.com/ontologies/space_model/common/id_label.owl> .
+
+<http://spacepatterns.com/ontologies/space_model/common/space_layout.owl#SpaceElement> a owl:Class ;
+    rdfs:comment "Reconstructed from its use in the element-class ontology; not the original definition. The original has to come from its author, Georg Suter (TU Wien)."@en ;
+    rdfs:isDefinedBy <http://spacepatterns.com/ontologies/space_model/common/space_layout.owl> .
+
+<https://w3id.org/aefm/reference-stub> a owl:Ontology ;
+    rdfs:label "Reconstructed stand-in for space_layout.owl and id_label.owl"@en ;
+    rdfs:comment "Declares only what the element-class ontology uses. Not for import."@en ;
+    owl:versionInfo "0.1.0" .

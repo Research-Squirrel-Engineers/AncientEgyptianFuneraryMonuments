@@ -1,0 +1,32 @@
+rule,stage,title,evidence_count,evidence_base
+1,I,Adding the initial courtyard,10,10
+2,I,Building a colonnades courtyard,1,10
+3,I,Adding a small space,10,10
+4,I,Adding a small and a large space,10,10
+5,II,Adding a nave,10,10
+6,II,Adding a second nave,1,10
+7,II,Subdividing a nave into nave components,10,10
+8,II,Adding a nave-corner,1,10
+9,II,Subdividing a nave-corner,1,10
+10,II,Subdividing a nave component,10,10
+11,II,Building pillars,10,10
+12,II,Merging nave components,10,10
+13,II,Building a pillar of a nave-corner,2,10
+14,II,Adding pilasters,1,10
+15,II,Extending a pilaster to a pillar,0,10
+16,II,Removing a pilaster,1,10
+17,II,Turning a pillar into a column,1,10
+18,III,Adding a space along a side axis,8,10
+19,III,Adding an antechamber across a side axis,3,10
+20,III,Adding a side room to a side room across a side axis,4,10
+21,III,Adding a niche along a side axis,4,10
+22,III,Adding an I-shaped corridor,2,10
+23,III,Adding an L-shaped corridor,2,10
+24,III,Building a T-shaped corridor,2,10
+25,III,Building a corridor corner,2,10
+26,IV,Turning a black main-axis-label,,
+27,IV,Deleting a white label,,
+28,IV,Deleting a black main-axis-label,,
+29,IV,Turning a side axis into a main axis,,
+30,V,Passageway with two doorframes,5,10
+31,V,Passageway with a single doorframe,10,10

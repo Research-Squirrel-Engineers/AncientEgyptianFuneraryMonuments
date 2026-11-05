@@ -1,0 +1,1013 @@
+Prefix: : <http://spacepatterns.com/ontologies/space_model/cultural_heritage/furnishing_funerary_monument_thebes_element_classes.owl>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: sm-cul-furn-el-fun-mon-cl: <http://spacepatterns.com/ontologies/space_model/cultural_heritage/furnishing_funerary_monument_thebes_element_classes.owl#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://spacepatterns.com/ontologies/space_model/cultural_heritage/furnishing_funerary_monument_thebes_element_classes.owl>
+
+Import: <http://spacepatterns.com/ontologies/space_model/common/space_layout.owl>
+
+Annotations: 
+    <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#domain> "furnishing",
+    <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#scope> "space element classes"
+
+AnnotationProperty: <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym>
+
+    
+AnnotationProperty: <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorFill>
+
+    
+AnnotationProperty: <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorStroke>
+
+    
+AnnotationProperty: <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#domain>
+
+    
+AnnotationProperty: <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#name>
+
+    
+AnnotationProperty: <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#scope>
+
+    
+AnnotationProperty: <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#weight>
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:int
+
+    
+Datatype: xsd:string
+
+    
+Class: <http://spacepatterns.com/ontologies/space_model/common/space_layout.owl#SpaceElement>
+
+    
+Class: sm-cul-furn-el-fun-mon-cl:Agriculture
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Agr"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FabricationAndProduction
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Altar
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Alt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Anubis
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Anu"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:God
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "ArchDec"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:DecorationElement
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BarkCarrier
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BarkC"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:StandingMan
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Beekeeping
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BeeK"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FabricationAndProduction
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Biography
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Biog"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Text
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BirdHunt
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BirdH"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FabricationAndProduction
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BookOfEarth
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BkEth"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BookOfNut
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BkNut"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BookOfTheAmduat
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Amduat"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BookOfTheDead
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BkOfDd"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BookOfTheGates
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BkGts"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BookOfTheNight
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BkNt"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BooksOfTheNetherworld
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BkNwld"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BullOfSky
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BullSky"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryScene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:BurntOffering
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BurntOff"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodOffering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Cabinet
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Cab"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:StorageElement
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:CavettoCornice
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "CavCor"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Chapel
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Chpl"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:CoffinText
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "CoffTxt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:CowWorking
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "CowW"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FabricationAndProduction
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Curse
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Crs"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Text
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:DailyLifeScene
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "DLifeSce"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Scene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Dancers
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Danc"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:MusicAndDance
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:DecorationElement
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Dec",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorFill> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorStroke> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#weight> "10"^^xsd:int
+    
+    SubClassOf: 
+        <http://spacepatterns.com/ontologies/space_model/common/space_layout.owl#SpaceElement>
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Doorframe
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "DFrame"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:FabricationAndProduction
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "FabProd"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:DailyLifeScene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:FalseDoor
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "FalseD"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Fishing
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Fish"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FabricationAndProduction
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:FuneraryScene
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "FunSce"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Scene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:FuneraryText
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "FunTxt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Text
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:FurnishingElement
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Furn",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorFill> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorStroke> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#weight> "10"^^xsd:int
+    
+    SubClassOf: 
+        <http://spacepatterns.com/ontologies/space_model/common/space_layout.owl#SpaceElement>
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:GeometricPattern
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "GeoPatt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Scene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:God
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "God"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Scene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:GodOffering
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "GodOff"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Offering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:GodStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "GodStat"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Statue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:GoodOffering
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "GoodOff"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Offering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:HathorStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "HaStat"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:HouseOFGold
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "HGd"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Chapel
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:HouseOfNatron
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "HNa"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Chapel
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:HtpdjnjswtOffering
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "HtpOff"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Offering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:IsisStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "IsStat"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:JourneyToAbydos
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "JrneAb"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryScene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:KneeingMan
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "KnMan"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Owner
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:LitanyOfRe
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "LitRe"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:MaatStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "MaStat"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:ManInFrontOfOfferingTable
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "ManOffTb"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:SittingMan
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:MortuaryOffering
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "MortOff"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Offering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Mother
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Moth"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Woman
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:MummifiedGod
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "MumGod"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:God
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:MusicAndDance
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "MusDan"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:DailyLifeScene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Musicians
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Mus"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:MusicAndDance
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:NeithStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "NeStat"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:NephthysStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Ne
+Stat"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Niche
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Nich"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:NutStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "NutStat"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Offering
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OffSc"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Scene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OfferingBearers
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OffBear"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GoodOffering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OfferingList
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OffL"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Offering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OfferingTable
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OffTb"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OfferingWater
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OffW"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GoodOffering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OldMan
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OldM"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:StandingMan
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OpeningOfTheMouth
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "BkMth"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Osiris
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Osir"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:God
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OsirisNiche
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OsNich"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Niche
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OsirisStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OsStat"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Owner
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Own"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Scene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OwnerInFrontOfTable
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OwnTb"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GoodOffering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:OwnerStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "OwnStat"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Statue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:PreparingIdealMummy
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "HMmy"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Chapel
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Priests
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Prie"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GoodOffering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:PyramidText
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "PyrTxt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Re
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Re"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:God
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:ReAtum
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "ReAt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodOffering
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:RitualOfHoursOfTheDay
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "RitDay"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:RitualOfHoursOfTheNight
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "RitNt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Scene
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Sce"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:DecorationElement
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Sculpture
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Scul"
+    
+    SubClassOf: 
+        <http://spacepatterns.com/ontologies/space_model/common/space_layout.owl#SpaceElement>
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Seat
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Seat",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorFill> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorStroke> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#weight> "10"^^xsd:int
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FurnishingElement
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:SeatedMan
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "SeatMan"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:OwnerStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:SelketStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "SeStat"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:ShentayetStatue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "SheStat"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:GodStatue
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Shrine
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Shrine"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:SittingMan
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "SitMan"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Owner
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:SittingWoman
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "SitWom"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Owner
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:SolarHymn
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "SolHy"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:StandingMan
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "StMan"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Owner
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Statue
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Stat"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Sculpture
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Stela
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Stela"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:StorageElement
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Stor",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorFill> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorStroke> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#weight> "10"^^xsd:int
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FurnishingElement
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Table
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Table",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorFill> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorStroke> "rgb(185, 158, 101)",
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#weight> "10"^^xsd:int
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FurnishingElement
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Text
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Txt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:DecorationElement
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Titularies
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Tit"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Text
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:TorusMouldingAndCavettoCornice
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "TorMCavC"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:ArchitecturalDecoration
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:UnclassifiedFuneraryText
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "UnclFTxt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FuneraryText
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:UnclassifiedText
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "UnclTxt"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Text
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:UnknownDecorationObject
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "UnknDO"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:DecorationElement
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:UnknownScene
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "UnknSce"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Scene
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Wife
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Wife"^^xsd:string
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Woman
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:WineMaking
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "WineM"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:FabricationAndProduction
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:Woman
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "Wom"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:Owner
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:WomanInFrontOfOfferingTable
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "WomOffTb"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:SittingWoman
+    
+    
+Class: sm-cul-furn-el-fun-mon-cl:YoungMan
+
+    Annotations: 
+        <http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym> "YounM"
+    
+    SubClassOf: 
+        sm-cul-furn-el-fun-mon-cl:StandingMan
+    
+    
+DisjointClasses: 
+    sm-cul-furn-el-fun-mon-cl:BookOfEarth,sm-cul-furn-el-fun-mon-cl:BookOfNut,sm-cul-furn-el-fun-mon-cl:BookOfTheAmduat,sm-cul-furn-el-fun-mon-cl:BookOfTheDead,sm-cul-furn-el-fun-mon-cl:BookOfTheGates,sm-cul-furn-el-fun-mon-cl:BookOfTheNight,sm-cul-furn-el-fun-mon-cl:BooksOfTheNetherworld,sm-cul-furn-el-fun-mon-cl:CoffinText,sm-cul-furn-el-fun-mon-cl:OpeningOfTheMouth,sm-cul-furn-el-fun-mon-cl:PyramidText,sm-cul-furn-el-fun-mon-cl:RitualOfHoursOfTheDay,sm-cul-furn-el-fun-mon-cl:RitualOfHoursOfTheNight,sm-cul-furn-el-fun-mon-cl:SolarHymn,sm-cul-furn-el-fun-mon-cl:UnclassifiedFuneraryText
+
+DisjointClasses: 
+    sm-cul-furn-el-fun-mon-cl:HathorStatue,sm-cul-furn-el-fun-mon-cl:IsisStatue,sm-cul-furn-el-fun-mon-cl:MaatStatue,sm-cul-furn-el-fun-mon-cl:NeithStatue,sm-cul-furn-el-fun-mon-cl:NephthysStatue,sm-cul-furn-el-fun-mon-cl:NutStatue,sm-cul-furn-el-fun-mon-cl:OsirisStatue,sm-cul-furn-el-fun-mon-cl:SelketStatue,sm-cul-furn-el-fun-mon-cl:ShentayetStatue
+
+DisjointClasses: 
+    sm-cul-furn-el-fun-mon-cl:HouseOFGold,sm-cul-furn-el-fun-mon-cl:HouseOfNatron,sm-cul-furn-el-fun-mon-cl:PreparingIdealMummy
+

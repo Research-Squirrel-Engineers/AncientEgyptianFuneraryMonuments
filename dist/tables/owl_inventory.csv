@@ -1,0 +1,17 @@
+kind,name,count,note
+file,furnishing_funerary_monument_thebes_element_classes.owl,1,ontology IRI http://spacepatterns.com/ontologies/space_model/cultural_heritage/furnishing_funerary_monument_thebes_element_classes.owl
+import,space_layout.owl,1,http://spacepatterns.com/ontologies/space_model/common/space_layout.owl
+annotation_property,acronym,104,http://spacepatterns.com/ontologies/space_model/common/id_label.owl#acronym
+annotation_property,colorFill,5,http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorFill
+annotation_property,colorStroke,5,http://spacepatterns.com/ontologies/space_model/common/id_label.owl#colorStroke
+annotation_property,domain,1,http://spacepatterns.com/ontologies/space_model/common/id_label.owl#domain
+annotation_property,name,0,http://spacepatterns.com/ontologies/space_model/common/id_label.owl#name
+annotation_property,scope,1,http://spacepatterns.com/ontologies/space_model/common/id_label.owl#scope
+annotation_property,weight,5,http://spacepatterns.com/ontologies/space_model/common/id_label.owl#weight
+branch,DecorationElement,85,classes below SpaceElement
+branch,Sculpture,14,classes below SpaceElement
+branch,FurnishingElement,5,classes below SpaceElement
+disjoint_group,group,14,pairwise disjoint classes
+disjoint_group,group,9,pairwise disjoint classes
+disjoint_group,group,3,pairwise disjoint classes
+classes,declared,105,including the imported root SpaceElement

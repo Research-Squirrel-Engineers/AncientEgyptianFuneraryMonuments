@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · Ancient Egyptian funerary monuments</title>
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+<main>
+<nav><div class="grp"><span class="lab">Documentation</span><span class="lnk"><a{% if page.url == "/" %} class="on"{% endif %} href="{{ '/' | relative_url }}">Overview</a><a{% if page.url == "/ontology.html" %} class="on"{% endif %} href="{{ '/ontology.html' | relative_url }}">Element classes</a><a{% if page.url == "/grammar.html" %} class="on"{% endif %} href="{{ '/grammar.html' | relative_url }}">Shape grammar</a></span></div><div class="grp"><span class="lab">Visuals</span><span class="lnk"><a href="{{ '/visuals/' | relative_url }}">Slide figures</a></span></div></nav>
+<h1>{{ page.title }}</h1>
+{% if page.intro %}<p class="intro">{{ page.intro }}</p>{% endif %}
+<article class="prose">
+{{ content }}
+</article>
+</main>
+<script>
+document.querySelectorAll("button[data-c]").forEach(function(b){b.addEventListener("click",function(){
+  var ok=function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy"},1200)};
+  if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.c).then(ok).catch(function(){})}
+})});
+</script>
+</body></html>

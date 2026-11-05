@@ -1,0 +1,541 @@
+@prefix aefm-g: <https://w3id.org/aefm/grammar/> .
+@prefix aefm-v: <https://w3id.org/aefm/vocab/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/aefm/grammar> a owl:Ontology ;
+    rdfs:label "AEFM shape grammar and space functions"@en ;
+    owl:versionInfo "0.1.0" .
+
+aefm-g:evidenceBase a owl:DatatypeProperty ;
+    rdfs:label "evidence base"@en .
+
+aefm-g:evidenceCount a owl:DatatypeProperty ;
+    rdfs:label "evidence count"@en ;
+    rdfs:comment "Number of monuments in which the rule is applied, as printed in the source (e = n/10)."@en .
+
+aefm-g:inStage a owl:ObjectProperty ;
+    rdfs:label "in stage"@en ;
+    rdfs:range aefm-g:GrammarStage .
+
+aefm-g:nextStage a owl:ObjectProperty ;
+    rdfs:label "next stage"@en ;
+    rdfs:range aefm-g:GrammarStage .
+
+<https://w3id.org/aefm/grammar/rule/R01> a aefm-g:ShapeRule ;
+    rdfs:label "Adding the initial courtyard"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/I> ;
+    aefm-g:ruleNumber 1 .
+
+<https://w3id.org/aefm/grammar/rule/R02> a aefm-g:ShapeRule ;
+    rdfs:label "Building a colonnades courtyard"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 1 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/I> ;
+    aefm-g:ruleNumber 2 .
+
+<https://w3id.org/aefm/grammar/rule/R03> a aefm-g:ShapeRule ;
+    rdfs:label "Adding a small space"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/I> ;
+    aefm-g:ruleNumber 3 .
+
+<https://w3id.org/aefm/grammar/rule/R04> a aefm-g:ShapeRule ;
+    rdfs:label "Adding a small and a large space"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/I> ;
+    aefm-g:ruleNumber 4 .
+
+<https://w3id.org/aefm/grammar/rule/R05> a aefm-g:ShapeRule ;
+    rdfs:label "Adding a nave"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 5 .
+
+<https://w3id.org/aefm/grammar/rule/R06> a aefm-g:ShapeRule ;
+    rdfs:label "Adding a second nave"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 1 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 6 .
+
+<https://w3id.org/aefm/grammar/rule/R07> a aefm-g:ShapeRule ;
+    rdfs:label "Subdividing a nave into nave components"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 7 .
+
+<https://w3id.org/aefm/grammar/rule/R08> a aefm-g:ShapeRule ;
+    rdfs:label "Adding a nave-corner"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 1 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 8 .
+
+<https://w3id.org/aefm/grammar/rule/R09> a aefm-g:ShapeRule ;
+    rdfs:label "Subdividing a nave-corner"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 1 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 9 .
+
+<https://w3id.org/aefm/grammar/rule/R10> a aefm-g:ShapeRule ;
+    rdfs:label "Subdividing a nave component"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 10 .
+
+<https://w3id.org/aefm/grammar/rule/R11> a aefm-g:ShapeRule ;
+    rdfs:label "Building pillars"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 11 .
+
+<https://w3id.org/aefm/grammar/rule/R12> a aefm-g:ShapeRule ;
+    rdfs:label "Merging nave components"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 12 .
+
+<https://w3id.org/aefm/grammar/rule/R13> a aefm-g:ShapeRule ;
+    rdfs:label "Building a pillar of a nave-corner"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 2 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 13 .
+
+<https://w3id.org/aefm/grammar/rule/R14> a aefm-g:ShapeRule ;
+    rdfs:label "Adding pilasters"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 1 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 14 .
+
+<https://w3id.org/aefm/grammar/rule/R15> a aefm-g:ShapeRule ;
+    rdfs:label "Extending a pilaster to a pillar"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 0 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 15 .
+
+<https://w3id.org/aefm/grammar/rule/R16> a aefm-g:ShapeRule ;
+    rdfs:label "Removing a pilaster"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 1 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 16 .
+
+<https://w3id.org/aefm/grammar/rule/R17> a aefm-g:ShapeRule ;
+    rdfs:label "Turning a pillar into a column"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 1 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:ruleNumber 17 .
+
+<https://w3id.org/aefm/grammar/rule/R18> a aefm-g:ShapeRule ;
+    rdfs:label "Adding a space along a side axis"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 8 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:ruleNumber 18 .
+
+<https://w3id.org/aefm/grammar/rule/R19> a aefm-g:ShapeRule ;
+    rdfs:label "Adding an antechamber across a side axis"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 3 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:ruleNumber 19 .
+
+<https://w3id.org/aefm/grammar/rule/R20> a aefm-g:ShapeRule ;
+    rdfs:label "Adding a side room to a side room across a side axis"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 4 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:ruleNumber 20 .
+
+<https://w3id.org/aefm/grammar/rule/R21> a aefm-g:ShapeRule ;
+    rdfs:label "Adding a niche along a side axis"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 4 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:ruleNumber 21 .
+
+<https://w3id.org/aefm/grammar/rule/R22> a aefm-g:ShapeRule ;
+    rdfs:label "Adding an I-shaped corridor"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 2 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:ruleNumber 22 .
+
+<https://w3id.org/aefm/grammar/rule/R23> a aefm-g:ShapeRule ;
+    rdfs:label "Adding an L-shaped corridor"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 2 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:ruleNumber 23 .
+
+<https://w3id.org/aefm/grammar/rule/R24> a aefm-g:ShapeRule ;
+    rdfs:label "Building a T-shaped corridor"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 2 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:ruleNumber 24 .
+
+<https://w3id.org/aefm/grammar/rule/R25> a aefm-g:ShapeRule ;
+    rdfs:label "Building a corridor corner"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 2 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:ruleNumber 25 .
+
+<https://w3id.org/aefm/grammar/rule/R26> a aefm-g:ShapeRule ;
+    rdfs:label "Turning a black main-axis-label"@en ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/IV> ;
+    aefm-g:ruleNumber 26 .
+
+<https://w3id.org/aefm/grammar/rule/R27> a aefm-g:ShapeRule ;
+    rdfs:label "Deleting a white label"@en ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/IV> ;
+    aefm-g:ruleNumber 27 .
+
+<https://w3id.org/aefm/grammar/rule/R28> a aefm-g:ShapeRule ;
+    rdfs:label "Deleting a black main-axis-label"@en ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/IV> ;
+    aefm-g:ruleNumber 28 .
+
+<https://w3id.org/aefm/grammar/rule/R29> a aefm-g:ShapeRule ;
+    rdfs:label "Turning a side axis into a main axis"@en ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/IV> ;
+    aefm-g:ruleNumber 29 .
+
+<https://w3id.org/aefm/grammar/rule/R30> a aefm-g:ShapeRule ;
+    rdfs:label "Passageway with two doorframes"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 5 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/V> ;
+    aefm-g:ruleNumber 30 .
+
+<https://w3id.org/aefm/grammar/rule/R31> a aefm-g:ShapeRule ;
+    rdfs:label "Passageway with a single doorframe"@en ;
+    aefm-g:evidenceBase 10 ;
+    aefm-g:evidenceCount 10 ;
+    aefm-g:inStage <https://w3id.org/aefm/grammar/stage/V> ;
+    aefm-g:ruleNumber 31 .
+
+aefm-g:ruleNumber a owl:DatatypeProperty ;
+    rdfs:label "rule number"@en .
+
+aefm-g:stageNumber a owl:DatatypeProperty ;
+    rdfs:label "stage number"@en .
+
+<https://w3id.org/aefm/vocab/spaceFunction/antechamber> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "AC" ;
+    skos:prefLabel "antechamber"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:angleMax 90.0 ;
+    aefm-v:angleMin 88.0 ;
+    aefm-v:angleSymbol "alpha" ;
+    aefm-v:lengthMax 21.5 ;
+    aefm-v:lengthMin 6.5 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 9.0 ;
+    aefm-v:widthMin 3.5 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/colonnades_courtyard> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "CCR" ;
+    skos:prefLabel "colonnades courtyard"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 49.5 ;
+    aefm-v:lengthMin 49.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 23.5 ;
+    aefm-v:widthMin 23.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/column> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "CO" ;
+    skos:note "printed with the code CO like the corridor; given as a diameter d"@en ;
+    skos:prefLabel "column"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:diameterMax 2.0 ;
+    aefm-v:diameterMin 1.5 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> .
+
+<https://w3id.org/aefm/vocab/spaceFunction/corridor> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "CO" ;
+    skos:prefLabel "corridor"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 69.0 ;
+    aefm-v:lengthMin 14.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 6.0 ;
+    aefm-v:widthMin 3.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/courtyard> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "CR" ;
+    skos:prefLabel "courtyard"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:angleMax 94.0 ;
+    aefm-v:angleMin 85.0 ;
+    aefm-v:angleSymbol "alpha" ;
+    aefm-v:lengthMax 32.0 ;
+    aefm-v:lengthMin 12.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 28.0 ;
+    aefm-v:widthMin 10.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/hall> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "H" ;
+    skos:prefLabel "hall"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 20.0 ;
+    aefm-v:lengthMin 8.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 8.0 ;
+    aefm-v:widthMin 6.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/intermediate_space> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "IS" ;
+    skos:prefLabel "intermediate space"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 4.8 ;
+    aefm-v:lengthMin 0.2 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 3.5 ;
+    aefm-v:widthMin 1.7 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/middle_axis> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "MA" ;
+    skos:note "width \"[0 c, ]\" has no upper bound and angle beta is empty; marked red in the source"@en ;
+    skos:prefLabel "middle axis"@en ;
+    skos:topConceptOf aefm-v:spaceFunction .
+
+<https://w3id.org/aefm/vocab/spaceFunction/nave_component> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "NC" ;
+    skos:note "width equals the width of the side nave (W_na)"@en ;
+    skos:prefLabel "nave component"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 6.6 ;
+    aefm-v:lengthMin 3.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> .
+
+<https://w3id.org/aefm/vocab/spaceFunction/nave_corner> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "NR" ;
+    skos:note "no dimensions given in the source"@en ;
+    skos:prefLabel "nave corner"@en ;
+    skos:topConceptOf aefm-v:spaceFunction .
+
+<https://w3id.org/aefm/vocab/spaceFunction/niche> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "NI" ;
+    skos:prefLabel "niche"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 1.2 ;
+    aefm-v:lengthMin 1.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 1.7 ;
+    aefm-v:widthMin 1.5 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/niche_entrance> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "NE" ;
+    skos:prefLabel "niche entrance"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 10.0 ;
+    aefm-v:lengthMin 5.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 10.0 ;
+    aefm-v:widthMin 5.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/passageway> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "PW" ;
+    skos:prefLabel "passageway"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 10.6 ;
+    aefm-v:lengthMin 0.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 2.8 ;
+    aefm-v:widthMin 1.2 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/pillar> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "PI" ;
+    skos:prefLabel "pillar"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:angleMax 106.0 ;
+    aefm-v:angleMin 71.0 ;
+    aefm-v:angleSymbol "alpha" ;
+    aefm-v:lengthMax 2.8 ;
+    aefm-v:lengthMin 0.9 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 2.8 ;
+    aefm-v:widthMin 0.9 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/pillared_hall> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "PH" ;
+    skos:prefLabel "pillared hall"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:angleMax 98.0 ;
+    aefm-v:angleMin 81.0 ;
+    aefm-v:angleSymbol "alpha" ;
+    aefm-v:lengthMax 32.0 ;
+    aefm-v:lengthMin 15.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 6.8 ;
+    aefm-v:widthMin 6.2 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/ramp> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "RP" ;
+    skos:note "length is printed as \"[67 c)\" in the source and cannot be read as a range"@en ;
+    skos:prefLabel "ramp"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 7.0 ;
+    aefm-v:widthMin 5.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/sanctuary> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "SY" ;
+    skos:prefLabel "sanctuary"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 2.4 ;
+    aefm-v:lengthMin 0.2 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 3.6 ;
+    aefm-v:widthMin 0.7 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/sanctuary_hall> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "SYH" ;
+    skos:prefLabel "sanctuary hall"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 13.0 ;
+    aefm-v:lengthMin 11.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 8.0 ;
+    aefm-v:widthMin 6.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/side_axis> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "SA" ;
+    skos:note "width \"[0 c, ]\" has no upper bound and angle beta is empty; marked red in the source"@en ;
+    skos:prefLabel "side axis"@en ;
+    skos:topConceptOf aefm-v:spaceFunction .
+
+<https://w3id.org/aefm/vocab/spaceFunction/side_nave> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "NA" ;
+    skos:prefLabel "side nave"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 32.0 ;
+    aefm-v:lengthMin 14.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 7.6 ;
+    aefm-v:widthMin 3.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/side_room> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "SR" ;
+    skos:prefLabel "side room"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:angleMax 105.0 ;
+    aefm-v:angleMin 72.0 ;
+    aefm-v:angleSymbol "alpha" ;
+    aefm-v:lengthMax 27.0 ;
+    aefm-v:lengthMin 3.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 11.0 ;
+    aefm-v:widthMin 2.5 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/staircase> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "SC" ;
+    skos:note "upper length bound is open in the source: [12 c; 20 c)"@en ;
+    skos:prefLabel "staircase"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:angleMax 90.0 ;
+    aefm-v:angleMin 82.0 ;
+    aefm-v:angleSymbol "alpha" ;
+    aefm-v:lengthMax 20.0 ;
+    aefm-v:lengthMin 12.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 6.0 ;
+    aefm-v:widthMin 4.0 .
+
+<https://w3id.org/aefm/vocab/spaceFunction/vestibul> a skos:Concept ;
+    skos:inScheme aefm-v:spaceFunction ;
+    skos:notation "VB" ;
+    skos:note "source spelling \"vestibul\""@en ;
+    skos:prefLabel "vestibul"@en ;
+    skos:topConceptOf aefm-v:spaceFunction ;
+    aefm-v:lengthMax 18.0 ;
+    aefm-v:lengthMin 8.0 ;
+    aefm-v:measuredIn <https://w3id.org/aefm/unit/cubit> ;
+    aefm-v:widthMax 8.0 ;
+    aefm-v:widthMin 5.0 .
+
+<https://w3id.org/aefm/grammar/stage/V> a aefm-g:GrammarStage ;
+    rdfs:label "Passageways and doorframes"@en ;
+    skos:notation "V" ;
+    aefm-g:stageNumber 5 .
+
+<https://w3id.org/aefm/grammar/stage/I> a aefm-g:GrammarStage ;
+    rdfs:label "Basic shape"@en ;
+    skos:notation "I" ;
+    aefm-g:nextStage <https://w3id.org/aefm/grammar/stage/II> ;
+    aefm-g:stageNumber 1 .
+
+<https://w3id.org/aefm/grammar/stage/IV> a aefm-g:GrammarStage ;
+    rdfs:label "Changing labels and axes"@en ;
+    skos:notation "IV" ;
+    aefm-g:nextStage <https://w3id.org/aefm/grammar/stage/V> ;
+    aefm-g:stageNumber 4 .
+
+aefm-g:GrammarStage a owl:Class ;
+    rdfs:label "Grammar stage"@en .
+
+<https://w3id.org/aefm/grammar/stage/III> a aefm-g:GrammarStage ;
+    rdfs:label "Side annexes"@en ;
+    skos:notation "III" ;
+    aefm-g:nextStage <https://w3id.org/aefm/grammar/stage/IV> ;
+    aefm-g:stageNumber 3 .
+
+<https://w3id.org/aefm/grammar/stage/II> a aefm-g:GrammarStage ;
+    rdfs:label "Side naves and pillars"@en ;
+    skos:notation "II" ;
+    aefm-g:nextStage <https://w3id.org/aefm/grammar/stage/III> ;
+    aefm-g:stageNumber 2 .
+
+<https://w3id.org/aefm/unit/cubit> a crm:E58_Measurement_Unit ;
+    rdfs:label "cubit"@en ;
+    rdfs:comment "Written c in the source. Its length in metres is not yet stated."@en .
+
+aefm-g:ShapeRule a owl:Class ;
+    rdfs:label "Shape rule"@en .
+
+aefm-v:spaceFunction a skos:ConceptScheme ;
+    skos:prefLabel "Space functions of Late Period funerary monuments"@en .

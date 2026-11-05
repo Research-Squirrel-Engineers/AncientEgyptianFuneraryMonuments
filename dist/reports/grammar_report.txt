@@ -1,0 +1,20 @@
+Shape grammar and space functions: findings
+===========================================
+
+stages 5, rules 31, space functions 23, triples 464
+
+rules per stage: I 4, II 13, III 8, IV 4, V 2
+
+codes used more than once: CO (corridor, column)
+rules without evidence value: 26, 27, 28, 29
+evidence base (monuments): 10
+
+open in the source:
+  nave component (NC): width equals the width of the side nave (W_na)
+  nave corner (NR): no dimensions given in the source
+  vestibul (VB): source spelling "vestibul"
+  staircase (SC): upper length bound is open in the source: [12 c; 20 c)
+  ramp (RP): length is printed as "[67 c)" in the source and cannot be read as a range
+  middle axis (MA): width "[0 c, ]" has no upper bound and angle beta is empty; marked red in the source
+  side axis (SA): width "[0 c, ]" has no upper bound and angle beta is empty; marked red in the source
+  column (CO): printed with the code CO like the corridor; given as a diameter d

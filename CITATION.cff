@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "AncientEgyptianFuneraryMonuments: Semantic model and Linked Open Data for Late Period rock-cut funerary monuments at Thebes"
+abstract: >-
+  Ontology modules, controlled vocabularies, shape-grammar data and slide figures
+  for the comparative analysis of Ancient Egyptian Late Period funerary monuments
+  (Twenty-fifth and Twenty-sixth Dynasty, Thebes). Companion to the CHNT31 contribution
+  "From Single Monuments to Systematic Comparison".
+type: software
+authors:
+  - family-names: Wutte
+    given-names: Anja
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: insert ORCID
+  - family-names: Thiery
+    given-names: Florian
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: insert ORCID
+license: MIT
+version: "0.1.0"
+date-released: "2026-11-04"
+repository-code: "https://github.com/Research-Squirrel-Engineers/AncientEgyptianFuneraryMonuments"
+keywords:
+  - Linked Open Data
+  - CIDOC CRM
+  - CRMba
+  - SKOS
+  - Ancient Egypt
+  - Late Period
+  - funerary architecture
+  - shape grammar

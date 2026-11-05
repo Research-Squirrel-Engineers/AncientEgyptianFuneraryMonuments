@@ -1,0 +1,8 @@
+[owl] element classes: 105 declared, 469 triples, 1 repair(s)
+[stub] stub: 1 class, 7 annotation properties, 28 triples
+[grammar] grammar: 31 rules in 5 stages, 23 space functions, 464 triples
+[visuals] V03 03-owl-docking
+[visuals] V04 04-element-classes
+[visuals] V06 06-shape-grammar
+[visuals] V07 07-space-functions
+[docs] docs: 3 pages, assets and layout

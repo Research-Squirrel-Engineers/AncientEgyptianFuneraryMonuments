@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slide figures · Ancient Egyptian funerary monuments</title>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<main>
+<nav><div class="grp"><span class="lab">Documentation</span><span class="lnk"><a href="../index.html">Overview</a><a href="../ontology.html">Element classes</a><a href="../grammar.html">Shape grammar</a></span></div><div class="grp"><span class="lab">Visuals</span><span class="lnk"><a class="on" href="index.html">Slide figures</a></span></div></nav>
+<h1>Slide figures</h1>
+<p class="intro">Figures for the semantic-modelling part of the CHNT31 contribution. Every number and label is read from the repository's tables. Dashed frames in the figures mark what is planned or not available.</p>
+<h2 class="step"><span class="n">1</span>Ontology</h2>
+<section>
+<img src="img/03-owl-docking.png" width="3500" height="2000" loading="lazy" alt="The received ontology and how the new modules dock onto it.">
+<div class="row"><p class="cap"><span class="n">V03</span>The received ontology and how the new modules dock onto it.</p><button type="button" data-c="The received ontology and how the new modules dock onto it.">Copy</button></div>
+<p class="cr">Figure CC BY 4.0. Numbers read from dist/tables/owl_inventory.csv and element_classes.csv. The ontologies space_layout.owl and id_label.owl are by Georg Suter (TU Wien); licence not yet known.</p>
+<p class="dl"><a href="img/03-owl-docking.png" download>PNG</a><a href="img/03-owl-docking.svg" download>SVG</a></p>
+</section>
+<section>
+<img src="img/04-element-classes.png" width="3500" height="2000" loading="lazy" alt="Element classes: 105 classes, one tree.">
+<div class="row"><p class="cap"><span class="n">V04</span>Element classes: 105 classes, one tree.</p><button type="button" data-c="Element classes: 105 classes, one tree.">Copy</button></div>
+<p class="cr">Figure CC BY 4.0. Numbers read from dist/tables/element_classes.csv, converted from the element-class ontology as received.</p>
+<p class="dl"><a href="img/04-element-classes.png" download>PNG</a><a href="img/04-element-classes.svg" download>SVG</a></p>
+</section>
+<h2 class="step"><span class="n">2</span>Shape grammar</h2>
+<section>
+<img src="img/06-shape-grammar.png" width="3500" height="2000" loading="lazy" alt="Shape grammar: 31 rules in five stages, with evidence.">
+<div class="row"><p class="cap"><span class="n">V06</span>Shape grammar: 31 rules in five stages, with evidence.</p><button type="button" data-c="Shape grammar: 31 rules in five stages, with evidence.">Copy</button></div>
+<p class="cr">Figure CC BY 4.0. Numbers read from data/curated/grammar_rules.csv, transcribed from the shape grammar of Wutte and Duarte (2021).</p>
+<p class="dl"><a href="img/06-shape-grammar.png" download>PNG</a><a href="img/06-shape-grammar.svg" download>SVG</a></p>
+</section>
+<section>
+<img src="img/07-space-functions.png" width="3500" height="2000" loading="lazy" alt="Space functions with dimension ranges in cubits.">
+<div class="row"><p class="cap"><span class="n">V07</span>Space functions with dimension ranges in cubits.</p><button type="button" data-c="Space functions with dimension ranges in cubits.">Copy</button></div>
+<p class="cr">Figure CC BY 4.0. Numbers read from data/curated/space_functions.csv; c is the cubit, its length in metres is not yet stated.</p>
+<p class="dl"><a href="img/07-space-functions.png" download>PNG</a><a href="img/07-space-functions.svg" download>SVG</a></p>
+</section>
+</main>
+<script>
+document.querySelectorAll("button[data-c]").forEach(function(b){b.addEventListener("click",function(){
+  var ok=function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy"},1200)};
+  if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.c).then(ok).catch(function(){})}
+})});
+</script>
+</body></html>
