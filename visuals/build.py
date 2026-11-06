@@ -10,6 +10,7 @@ repository's own tables (dist/tables/, data/curated/), never typed in by hand.
 The numbering follows the figure plan in PRIMER.md (V01 to V10); only the figures whose
 data exist are built.
 """
+import base64
 import csv
 import sys
 from pathlib import Path
@@ -446,11 +447,21 @@ def fig_monument_parts():
     lx, lw, mx, mw, rx, rw = 40, 520, 620, 480, 1260, 450
     for x, t in ((lx, "Plan"), (mx, "Monument and rooms"), (rx, "Decoration")):
         f.text(x, 48, t, 26, True, anchor="start")
-    # plan placeholder: the plan itself is placed on the slide, not drawn here
-    f.rect(lx, 85, lw, 480, "#ffffff", "#000000", 6, 2, dash=True)
-    for i, (t, sz, med, col) in enumerate((("Plan of Harwa (TT37)", 24, True, DARK), ("to be placed on the slide", 19, False, MUTED),
-                                            ("digitised plan: Anja Wutte", 19, False, MUTED), ("site plans: Eigner 1984", 19, False, MUTED))):
-        f.text(lx + lw / 2, 270 + i * 38, t, sz, med, col)
+    # plan: embedded when data/plans/harwa_plan.png exists, otherwise a labelled placeholder
+    plan = site_kit.REPO / "data" / "plans" / "harwa_plan.png"
+    if plan.exists():
+        pw, ph = site_kit.png_size(plan)
+        h = 480
+        w = h * pw / ph
+        x0 = lx + (lw - w) / 2
+        f.rect(lx, 85, lw, 480, "#ffffff", "#d8d6ce", 6, 1)
+        b64 = base64.b64encode(plan.read_bytes()).decode("ascii")
+        f.o.append(f'<image x="{x0:.1f}" y="85" width="{w:.1f}" height="{h}" href="data:image/png;base64,{b64}"/>')
+    else:
+        f.rect(lx, 85, lw, 480, "#ffffff", "#000000", 6, 2, dash=True)
+        for i, (t, sz, med, col) in enumerate((("Plan of Harwa (TT37)", 24, True, DARK), ("to be placed on the slide", 19, False, MUTED),
+                                                ("digitised plan: Anja Wutte", 19, False, MUTED), ("site plans: Eigner 1984", 19, False, MUTED))):
+            f.text(lx + lw / 2, 270 + i * 38, t, sz, med, col)
     f.text(lx, 600, "From the title block of the plan", 19, True, anchor="start")
     for i, t in enumerate(("25th Dynasty, Shabaka and Taharka", "Asasif North", "Chief Steward")):
         f.text(lx, 632 + i * 28, t, 18, color=MUTED, anchor="start")
@@ -636,7 +647,7 @@ CREDIT = "Figure CC BY 4.0. Numbers read from "
 CREDITS = {
     "08-ontology-contents": CREDIT + "dist/tables/owl_inventory.csv and element_classes.csv; the ontology is as received from Anja Wutte.",
     "09-roadmap": CREDIT + "dist/tables/element_classes.csv. The steps after the first are plans.",
-    "01-monument-parts": CREDIT + "dist/tables/element_classes.csv and data/curated/space_functions.csv. Room labels from the plan of Harwa (TT37), digitised by Anja Wutte after Eigner (1984); the plan is not part of the figure.",
+    "01-monument-parts": CREDIT + "dist/tables/element_classes.csv and data/curated/space_functions.csv. Room labels from the plan of Harwa (TT37), plan of Harwa digitised by Anja Wutte after Eigner (1984); green marks later additions.",
     "02-data-situation": CREDIT + "dist/tables/owl_inventory.csv and data/curated/grammar_rules.csv. The statements on the left are Anja Wutte's assessment of the field.",
     "05-linking-plan": CREDIT + "dist/tables/owl_inventory.csv and data/curated/space_functions.csv. Match relations and targets are planned.",
     "03-owl-docking": CREDIT + "dist/tables/owl_inventory.csv and element_classes.csv. The ontologies space_layout.owl and id_label.owl are by Georg Suter (TU Wien); licence not yet known.",
