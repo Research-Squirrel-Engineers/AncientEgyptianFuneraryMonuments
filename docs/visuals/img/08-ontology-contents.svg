@@ -1,0 +1,60 @@
+<svg width="1750" height="1000" viewBox="0 0 1750 1000" xmlns="http://www.w3.org/2000/svg" role="img"><title>What the received element-class ontology contains and what it does not yet contain</title>
+<rect width="1750" height="1000" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#55544f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="700.0" y="85.0" width="350.0" height="70.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="875.0" y="106.08" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="24" font-weight="500" fill="#000000">SpaceElement</text>
+<text x="875.0" y="135.84" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#000000">root class, from an imported file</text>
+<line x1="875.0" y1="155.0" x2="300.0" y2="215.0" stroke="#55544f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="40.0" y="215.0" width="520.0" height="84.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="300.0" y="241.92000000000002" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#ffffff">DecorationElement</text>
+<text x="300.0" y="274.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#ffffff">85 classes</text>
+<rect x="60.0" y="320.0" width="480.0" height="60.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="300.0" y="337.82" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">Scene</text>
+<text x="300.0" y="363.86" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="16" fill="#ffffff">46 subclasses</text>
+<rect x="60.0" y="392.0" width="480.0" height="60.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="300.0" y="409.82" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">Text</text>
+<text x="300.0" y="435.86" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="16" fill="#ffffff">20 subclasses</text>
+<rect x="60.0" y="464.0" width="480.0" height="60.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="300.0" y="481.82" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">ArchitecturalDecoration</text>
+<text x="300.0" y="507.86" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="16" fill="#ffffff">14 subclasses</text>
+<text x="60" y="540" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#55544f">4 direct subclasses, the three largest shown</text>
+<line x1="875.0" y1="155.0" x2="875.0" y2="215.0" stroke="#55544f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="615.0" y="215.0" width="520.0" height="84.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="875.0" y="241.92000000000002" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#ffffff">Sculpture</text>
+<text x="875.0" y="274.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#ffffff">14 classes</text>
+<rect x="635.0" y="320.0" width="480.0" height="60.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="875.0" y="337.82" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">Statue</text>
+<text x="875.0" y="363.86" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="16" fill="#ffffff">12 subclasses</text>
+<text x="635" y="540" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#55544f">1 direct subclass</text>
+<line x1="875.0" y1="155.0" x2="1450.0" y2="215.0" stroke="#55544f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="1190.0" y="215.0" width="520.0" height="84.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1450.0" y="241.92000000000002" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#ffffff">FurnishingElement</text>
+<text x="1450.0" y="274.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#ffffff">5 classes</text>
+<rect x="1210.0" y="320.0" width="480.0" height="60.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1450.0" y="337.82" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">StorageElement</text>
+<text x="1450.0" y="363.86" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="16" fill="#ffffff">1 subclass</text>
+<rect x="1210.0" y="392.0" width="480.0" height="60.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1450.0" y="409.82" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">Seat</text>
+<text x="1450.0" y="435.86" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="16" fill="#ffffff">no subclasses</text>
+<rect x="1210.0" y="464.0" width="480.0" height="60.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1450.0" y="481.82" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">Table</text>
+<text x="1450.0" y="507.86" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="16" fill="#ffffff">no subclasses</text>
+<text x="1210" y="540" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#55544f">3 direct subclasses</text>
+<rect x="40.0" y="640.0" width="820.0" height="235.0" rx="8" fill="#f6f6f3" stroke="#d8d6ce" stroke-width="1"/>
+<text x="60" y="668" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#1f1f1d">The file contains</text>
+<rect x="890.0" y="640.0" width="820.0" height="235.0" rx="8" fill="#f6f6f3" stroke="#d8d6ce" stroke-width="1"/>
+<text x="910" y="668" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#1f1f1d">The file does not yet contain</text>
+<text x="60" y="712" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">105 classes in one tree, 5 levels deep</text>
+<text x="60" y="752" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">a short code for 104 of them</text>
+<text x="60" y="792" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">3 groups of classes that exclude each other</text>
+<text x="60" y="832" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">the three branches above</text>
+<text x="910" y="712" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">labels: 0 of 105 classes have one</text>
+<text x="910" y="752" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">definitions of the classes</text>
+<text x="910" y="792" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">relations between classes: 0 properties</text>
+<text x="910" y="832" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">instances: no gods, scenes or monuments as data</text>
+<rect x="614.6" y="909.0" width="22.0" height="22.0" rx="3" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="646.6" y="920" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Class</text>
+<rect x="726.9" y="909.0" width="22.0" height="22.0" rx="3" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<text x="758.9" y="920" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Root class (imported file, not available)</text>
+<text x="45" y="978" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Counts read from dist/tables/owl_inventory.csv and element_classes.csv. The three largest subclasses of each branch are shown.</text>
+</svg>

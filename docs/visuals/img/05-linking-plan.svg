@@ -1,0 +1,48 @@
+<svg width="1750" height="1000" viewBox="0 0 1750 1000" xmlns="http://www.w3.org/2000/svg" role="img"><title>How identifiers of the model are meant to link to other sources</title>
+<rect width="1750" height="1000" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#55544f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="40.0" y="85.0" width="1670.0" height="64.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="875.0" y="104.24" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#000000">https://w3id.org/aefm/</text>
+<text x="875.0" y="131.52" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#000000">proposed namespace, not yet registered</text>
+<rect x="40.0" y="200.0" width="520.0" height="100.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="300.0" y="234.92000000000002" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#ffffff">Element classes</text>
+<text x="300.0" y="267.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#ffffff">105 classes, original IRIs kept</text>
+<line x1="560.0" y1="250.0" x2="1190.0" y2="250.0" stroke="#55544f" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="800.9" y="212.0" width="148.3" height="25.0" rx="5" fill="#fbbf24" stroke="#000000" stroke-width="1"/>
+<text x="875" y="224" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" font-weight="500" fill="#000000">skos:exactMatch</text>
+<rect x="1190.0" y="200.0" width="520.0" height="100.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="1450.0" y="234.92000000000002" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#000000">spacepatterns.com IRIs</text>
+<text x="1450.0" y="267.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#000000">reference only, the files are not available</text>
+<rect x="40.0" y="350.0" width="520.0" height="100.0" rx="6" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="300.0" y="384.92" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#ffffff">Space functions</text>
+<text x="300.0" y="417.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#ffffff">23 concepts in a SKOS scheme</text>
+<line x1="560.0" y1="400.0" x2="1190.0" y2="400.0" stroke="#55544f" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<rect x="801.4" y="362.0" width="147.2" height="25.0" rx="5" fill="#fbbf24" stroke="#000000" stroke-width="1"/>
+<text x="875" y="374" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" font-weight="500" fill="#000000">skos:closeMatch</text>
+<rect x="1190.0" y="350.0" width="520.0" height="100.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="1450.0" y="384.92" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#000000">Getty AAT</text>
+<text x="1450.0" y="417.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#000000">building terms</text>
+<rect x="40.0" y="500.0" width="520.0" height="100.0" rx="6" fill="#166534" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="300.0" y="534.92" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#ffffff">Monuments</text>
+<text x="300.0" y="567.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#ffffff">10, data planned</text>
+<line x1="560.0" y1="550.0" x2="1190.0" y2="550.0" stroke="#55544f" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<rect x="819.6" y="512.0" width="110.8" height="25.0" rx="5" fill="#fbbf24" stroke="#000000" stroke-width="1"/>
+<text x="875" y="524" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" font-weight="500" fill="#000000">owl:sameAs</text>
+<rect x="1190.0" y="500.0" width="520.0" height="100.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="1450.0" y="534.92" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#000000">Wikidata</text>
+<text x="1450.0" y="567.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#000000">monuments and their kinds</text>
+<text x="40" y="700" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Exists: classes and space functions as Turtle. Planned: the links, the monument data, queries.</text>
+<text x="40" y="734" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Not decided yet: the licence of the data.</text>
+<rect x="480.6" y="894.0" width="22.0" height="22.0" rx="3" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="512.6" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Class</text>
+<rect x="592.9" y="894.0" width="22.0" height="22.0" rx="3" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="624.9" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Vocabulary</text>
+<rect x="756.7" y="894.0" width="22.0" height="22.0" rx="3" fill="#166534" stroke="#000000" stroke-width="1"/>
+<text x="788.7" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Monument</text>
+<rect x="918.0" y="894.0" width="22.0" height="22.0" rx="3" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<text x="950.0" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Target</text>
+<rect x="1040.7" y="894.0" width="22.0" height="22.0" rx="3" fill="#fbbf24" stroke="#000000" stroke-width="1"/>
+<text x="1072.7" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Relation (planned)</text>
+<text x="875.0" y="940" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#55544f">Solid frame: exists. Dashed: planned or not available. No vocabulary is prescribed by the subject experts; Wikidata and Getty AAT are the plan.</text>
+<text x="45" y="978" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Match relations are proposals; owl:equivalentClass would be the stronger alternative for the old IRIs.</text>
+</svg>

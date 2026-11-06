@@ -313,7 +313,7 @@ def fig_space_functions():
             f.text(ax, cy, f"α {r['angle_min']}–{r['angle_max']}°", 16, anchor="start")
     ey = top + rh * len(rows) + 28
     f.legend(ey, [(REAL, "Length range"), (TERM, "Width range"), (("#ffffff", "#4c1d95", "#000000"), "Diameter of a column")], x=45)
-    f.caption("Table of space functions from the shape grammar, transcribed in data/curated/space_functions.csv; c is the cubit, its length in metres is not yet stated.")
+    f.caption("Table of space functions from the shape grammar, transcribed in data/curated/space_functions.csv; c is the cubit (0.5 m).")
     f.save()
     return "Every space function carries a range of lengths, widths and angles in cubits, which makes room types comparable across monuments."
 
@@ -411,15 +411,246 @@ def fig_owl_docking():
     return "The received element-class ontology rests on two files we cannot read; the new modules convert it, keep its IRIs as references and dock onto SKOS, CIDOC CRM and CRMba."
 
 
+# ---------------------------------------------------------------- talk slides: V01, V02, V05
+def _facts():
+    inv = read(TABLES / "owl_inventory.csv")
+    rules = read(CURATED / "grammar_rules.csv")
+    spaces = {r["name"]: r for r in read(CURATED / "space_functions.csv")}
+    classes = {r["class"] for r in read(TABLES / "element_classes.csv")}
+    total = next(r["count"] for r in inv if r["kind"] == "classes")
+    monuments = max(int(r["evidence_base"]) for r in rules if r["evidence_base"])
+    return total, len(spaces), monuments, spaces, classes
+
+
+def _chip(f, cx, y, label):
+    cw = tw(label, 17, True) + 20
+    f.rect(cx - cw / 2, y - 12, cw, 25, PROP[0], "#000000", 5, 1)
+    f.text(cx, y, label, 17, True, "#000000")
+
+
+def fig_monument_parts():
+    total, n_spaces, monuments, spaces, classes = _facts()
+    # Rooms as labelled on the plan of Harwa (TT37); each must be a space function of the grammar's table.
+    rooms = [("courtyard", "courtyard"), ("vestibul", "vestibul"), ("niche entrance", "niche entrance"),
+             ("pillared hall I", "pillared hall"), ("pillared hall II", "pillared hall"), ("sanctuary", "sanctuary"), ("corridor", "corridor")]
+    for _, key in rooms:
+        if key not in spaces:
+            raise SystemExit(f"room label {key!r} is not a space function")
+    tree = [("Text", 0, "Text"), ("FuneraryText", 1, "FuneraryText"), ("Scene", 0, "Scene"), ("DailyLifeScene", 1, "DailyLifeScene"),
+            ("FuneraryScene", 1, "FuneraryScene"), ("Owner", 1, "Owner"), ("StandingMan", 2, "StandingMan"), ("SittingMan", 2, "SittingMan"),
+            ("KneeingMan", 2, "KneeingMan")]
+    for _, _, c in tree:
+        if c not in classes:
+            raise SystemExit(f"class {c!r} is not in the element-class ontology")
+    f = Fig("01-monument-parts", "From a monument to its rooms and decoration, shown for Harwa")
+    lx, lw, mx, mw, rx, rw = 40, 520, 620, 480, 1260, 450
+    for x, t in ((lx, "Plan"), (mx, "Monument and rooms"), (rx, "Decoration")):
+        f.text(x, 48, t, 26, True, anchor="start")
+    # plan placeholder: the plan itself is placed on the slide, not drawn here
+    f.rect(lx, 85, lw, 480, "#ffffff", "#000000", 6, 2, dash=True)
+    for i, (t, sz, med, col) in enumerate((("Plan of Harwa (TT37)", 24, True, DARK), ("to be placed on the slide", 19, False, MUTED),
+                                            ("digitised plan: Anja Wutte", 19, False, MUTED), ("site plans: Eigner 1984", 19, False, MUTED))):
+        f.text(lx + lw / 2, 270 + i * 38, t, sz, med, col)
+    f.text(lx, 600, "From the title block of the plan", 19, True, anchor="start")
+    for i, t in enumerate(("25th Dynasty, Shabaka and Taharka", "Asasif North", "Chief Steward")):
+        f.text(lx, 632 + i * 28, t, 18, color=MUTED, anchor="start")
+    # monument and rooms
+    f.box(mx, 85, mw, 90, "Harwa", "TT37, a funerary monument", st=REAL, ts=26, ss=19)
+    f.line(mx + 400, 175, mx + 400, 205, w=1.6, dash=True)
+    f.text(mx + 412, 190, "has part", 17, True, anchor="start")
+    f.text(mx, 218, "Rooms, named as on the plan", 19, True, anchor="start")
+    cw = (mw - 20) / 2
+    for i, (label, key) in enumerate(rooms):
+        x = mx + (i % 2) * (cw + 20)
+        y = 245 + (i // 2) * 72
+        f.box(x, y, cw, 58, label, spaces[key]["code"], st=TERM, ts=20, ss=17, dash=False)
+    # decoration
+    f.rect(rx - 14, 75, rw + 28, 600, "#f6f6f3", "#d8d6ce", 8, 1)
+    ys = {"Text": 90, "FuneraryText": 160, "Scene": 255, "DailyLifeScene": 325, "FuneraryScene": 381, "Owner": 437,
+          "StandingMan": 493, "SittingMan": 549, "KneeingMan": 605}
+    for name, level, _ in tree:
+        x = rx + level * 40
+        h = 56 if level == 0 else 44
+        f.box(x, ys[name], rw - level * 40, h, name, st=CLS, ts=21 if level == 0 else 19)
+    for parent, kids, tx in (("Text", ["FuneraryText"], rx + 20), ("Scene", ["DailyLifeScene", "FuneraryScene", "Owner"], rx + 20),
+                             ("Owner", ["StandingMan", "SittingMan", "KneeingMan"], rx + 60)):
+        top = ys[parent] + (56 if parent in ("Text", "Scene") else 44)
+        last = ys[kids[-1]] + 22
+        f.line(tx, top, tx, last, None, w=1.3)
+        for k in kids:
+            f.line(tx, ys[k] + 22, tx + 20, ys[k] + 22, None, w=1.3)
+    f.line(mx + mw, 383, rx - 14, 383, w=1.6, dash=True)
+    f.text((mx + mw + rx - 14) / 2, 362, "has decoration", 17, True)
+    # proposed mapping
+    f.text(lx, 725, "Proposed mapping to CIDOC CRM and CRMba (planned)", 19, True, anchor="start")
+    bw = (1670 - 3 * 20) / 4
+    for i, (t, s) in enumerate((("Monument", "CRMba B1 Built Work"), ("Room", "B2 Morphological Building Section"),
+                                ("Scene", "CIDOC CRM E36 Visual Item"), ("Text", "E33 Linguistic Object"))):
+        f.box(lx + i * (bw + 20), 755, bw, 84, t, s, st=OWL, ts=22, ss=17, dash=True)
+    f.legend(905, [(REAL, "Monument"), (TERM, "Space function"), (CLS, "Class"), (OWL, "Planned mapping")])
+    f.text(W / 2, 940, "Dashed: planned. The relations have no property in the model yet.", 17, color=MUTED, maxw=W - 90)
+    f.caption("Room labels from the plan of Harwa; classes from the element-class ontology; space-function codes from the grammar's table.")
+    f.save()
+
+
+def fig_data_situation():
+    total, n_spaces, monuments, spaces, classes = _facts()
+    f = Fig("02-data-situation", "Research data on Egyptian funerary monuments today and with a shared model")
+    f.text(40, 48, "Today", 26, True, anchor="start")
+    f.text(880, 48, "With a shared model", 26, True, anchor="start")
+    srcs = ["Analogue plans", "Digitised plans", "Space model (BIM)", "Decoration records", "Publications"]
+    scatter = [(40, 100), (300, 150), (80, 260), (330, 340), (170, 450)]
+    for t, (x, y) in zip(srcs, scatter):
+        f.box(x, y, 240, 64, t, st=INST, ts=21, dash=True)
+    f.line(830, 90, 830, 560, None, dash=True, w=1.3, color="#d8d6ce")
+    f.text(40, 600, "Egyptian research data today", 21, True, anchor="start")
+    for i, t in enumerate(("No unified system", "Little connection to shareable data", "Terms differ between authors")):
+        f.text(40, 640 + i * 34, t, 20, color=MUTED, anchor="start")
+    sx, sw_, mx, mw, ox, ow = 880, 220, 1170, 230, 1470, 240
+    ys = [100, 186, 272, 358, 444]
+    for t, y in zip(srcs, ys):
+        f.box(sx, y, sw_, 64, t, st=INST, ts=20)
+        f.line(sx + sw_, y + 32, mx, y + 32, w=1.6, dash=True)
+    f.box(mx, 100, mw, 408, "Shared model", "stable identifiers", st=OWL, ts=24, ss=19)
+    for t, y, dash in (("Wikidata", 130, True), ("Getty AAT", 260, True), ("Open files", 390, False)):
+        sub = {"Wikidata": "links, planned", "Getty AAT": "links, planned", "Open files": "Turtle and CSV"}[t]
+        f.box(ox, y, ow, 70, t, sub, st=OWL, ts=21, ss=17, dash=dash)
+        f.line(mx + mw, y + 35, ox, y + 35, w=1.6, dash=dash)
+    for i, (n, t, st, dash) in enumerate(((total, "element classes", CLS, False), (n_spaces, "space functions", TERM, False),
+                                          (monuments, "monuments, data planned", REAL, True))):
+        bw = (830 - 40) / 3
+        f.box(880 + i * (bw + 20), 560, bw, 84, str(n), t, st=st, ts=30, ss=17, dash=dash)
+    f.text(880, 690, "Exists: element classes as Turtle, space functions as SKOS.", 19, color=MUTED, anchor="start")
+    f.text(880, 722, "Planned: monument data, links, queries.", 19, color=MUTED, anchor="start")
+    f.legend(905, [(INST, "Source"), (OWL, "Model or target"), (CLS, "Class"), (TERM, "Vocabulary"), (REAL, "Monument")])
+    f.text(W / 2, 940, "Solid frame: exists. Dashed: planned, or not yet connected.", 17, color=MUTED, maxw=W - 90)
+    f.caption("The sources are those named for Harwa and the ten monuments; the statements on the left are Anja Wutte's assessment.")
+    f.save()
+
+
+def fig_linking_plan():
+    total, n_spaces, monuments, spaces, classes = _facts()
+    f = Fig("05-linking-plan", "How identifiers of the model are meant to link to other sources")
+    f.box(40, 85, 1670, 64, "https://w3id.org/aefm/", "proposed namespace, not yet registered", st=OWL, ts=22, ss=17, dash=True)
+    rows = [((f"Element classes", f"{total} classes, original IRIs kept", CLS, False), "skos:exactMatch",
+             ("spacepatterns.com IRIs", "reference only, the files are not available", OWL, True), False),
+            (("Space functions", f"{n_spaces} concepts in a SKOS scheme", TERM, False), "skos:closeMatch",
+             ("Getty AAT", "building terms", OWL, True), True),
+            (("Monuments", f"{monuments}, data planned", REAL, True), "owl:sameAs",
+             ("Wikidata", "monuments and their kinds", OWL, True), True)]
+    for i, (a, rel, b, dash) in enumerate(rows):
+        y = 200 + i * 150
+        f.box(40, y, 520, 100, a[0], a[1], st=a[2], ts=26, ss=19, dash=a[3])
+        f.line(560, y + 50, 1190, y + 50, w=1.6, dash=dash)
+        _chip(f, 875, y + 24, rel)
+        f.box(1190, y, 520, 100, b[0], b[1], st=b[2], ts=26, ss=19, dash=b[3])
+    f.text(40, 700, "Exists: classes and space functions as Turtle. Planned: the links, the monument data, queries.", 19, color=MUTED, anchor="start")
+    f.text(40, 734, "Not decided yet: the licence of the data.", 19, color=MUTED, anchor="start")
+    f.legend(905, [(CLS, "Class"), (TERM, "Vocabulary"), (REAL, "Monument"), (OWL, "Target"), (PROP, "Relation (planned)")])
+    f.text(W / 2, 940, "Solid frame: exists. Dashed: planned or not available. No vocabulary is prescribed by the subject experts; Wikidata and Getty AAT are the plan.", 17, color=MUTED, maxw=W - 90)
+    f.caption("Match relations are proposals; owl:equivalentClass would be the stronger alternative for the old IRIs.")
+    f.save()
+
+
+def fig_ontology_contents():
+    inv = read(TABLES / "owl_inventory.csv")
+    rows = read(TABLES / "element_classes.csv")
+    val = {(r["kind"], r["name"]): int(r["count"]) for r in inv if r["count"].lstrip("-").isdigit()}
+    total = val[("classes", "declared")]
+    labelled = val[("classes", "with label")]
+    props = val[("classes", "object or datatype properties")]
+    codes = val[("annotation_property", "acronym")]
+    groups = [r["count"] for r in inv if r["kind"] == "disjoint_group"]
+    depth = max(int(r["depth"]) for r in rows)
+    f = Fig("08-ontology-contents", "What the received element-class ontology contains and what it does not yet contain")
+    f.box(700, 85, 350, 70, "SpaceElement", "root class, from an imported file", st=OWL, ts=24, ss=17, dash=True)
+    branches = [r for r in inv if r["kind"] == "branch"]
+    colw, xs = 520, [40, 615, 1190]
+    for x, b in zip(xs, branches):
+        f.line(875, 155, x + colw / 2, 215, w=1.5)
+        f.box(x, 215, colw, 84, b["name"], f"{b['count']} classes", st=CLS, ts=26, ss=19)
+        kids = [r for r in rows if r["parent"] == b["name"]]
+        kids.sort(key=lambda r: (-int(r["descendants"]), r["class"]))
+        for i, k in enumerate(kids[:3]):
+            n = int(k["descendants"])
+            sub = f"{n} subclass" + ("es" if n != 1 else "") if n else "no subclasses"
+            f.box(x + 20, 320 + i * 72, colw - 40, 60, k["class"], sub, st=CLS, ts=21, ss=16)
+        more = len(kids) - 3
+        note = f"{len(kids)} direct subclass" + ("es" if len(kids) != 1 else "") + (", the three largest shown" if more > 0 else "")
+        f.text(x + 20, 320 + 3 * 72 + 4, note, 17, color=MUTED, anchor="start")
+    lx, rx, pw = 40, 890, 820
+    for x, title in ((lx, "The file contains"), (rx, "The file does not yet contain")):
+        f.rect(x, 640, pw, 235, "#f6f6f3", "#d8d6ce", 8, 1)
+        f.text(x + 20, 668, title, 22, True, anchor="start")
+    has = [f"{total} classes in one tree, {depth} levels deep", f"a short code for {codes} of them",
+           f"{len(groups)} groups of classes that exclude each other", "the three branches above"]
+    lack = [f"labels: {labelled} of {total} classes have one", "definitions of the classes",
+            f"relations between classes: {props} properties", "instances: no gods, scenes or monuments as data"]
+    for i, t in enumerate(has):
+        f.text(lx + 20, 712 + i * 40, t, 20, color=DARK, anchor="start", maxw=pw - 40)
+    for i, t in enumerate(lack):
+        f.text(rx + 20, 712 + i * 40, t, 20, color=DARK, anchor="start", maxw=pw - 40)
+    f.legend(920, [(CLS, "Class"), (OWL, "Root class (imported file, not available)")])
+    f.caption("Counts read from dist/tables/owl_inventory.csv and element_classes.csv. The three largest subclasses of each branch are shown.")
+    f.save()
+
+
+def fig_roadmap():
+    rows = read(TABLES / "element_classes.csv")
+    total = len(rows)
+    acr = {}
+    for r in rows:
+        if r["acronym"]:
+            acr.setdefault(r["acronym"], []).append(r["class"])
+    clashes = sum(1 for v in acr.values() if len(v) > 1)
+    f = Fig("09-roadmap", "Four steps from the received ontology to linked data, and where we stand")
+    steps = [("Convert", f"{total} classes from Manchester syntax to Turtle, original IRIs kept", "done", CLS, False),
+             ("Clean and describe", f"{clashes} clashing short code found; labels and definitions are missing", "planned", INST, True),
+             ("Dock onto standards", "SKOS concepts, CIDOC CRM and CRMba for monuments, rooms and decoration", "planned", INST, True),
+             ("Link", "Wikidata, Getty AAT and the old IRIs as references", "planned", INST, True)]
+    bw, gap, x0 = 380, 50, 40
+    for i, (title, text, status, st, planned) in enumerate(steps):
+        x = x0 + i * (bw + gap)
+        f.box(x, 200, bw, 100, title, st=st, ts=28, dash=planned)
+        f.circle(x + 30, 200, 20, "#ffffff", "#000000", 1.5)
+        f.text(x + 30, 200, str(i + 1), 22, True)
+        lines = wrap(text, 20, bw - 20, maxlines=4)
+        for j, t in enumerate(lines):
+            f.text(x + 10, 345 + j * 30, t, 20, color=DARK, anchor="start")
+        cw = tw(status, 18, True) + 24
+        f.rect(x + 10, 420, cw, 30, PROP[0] if status == "planned" else "#166534", "#000000", 6, 1)
+        f.text(x + 10 + cw / 2, 435, status, 18, True, "#000000" if status == "planned" else "#ffffff")
+        if i < len(steps) - 1:
+            f.line(x + bw + 4, 250, x + bw + gap - 4, 250, w=1.8, dash=steps[i + 1][2] == "planned")
+    f.rect(x0 + bw + gap, 490, bw, 170, "#f6f6f3", "#d8d6ce", 8, 1)
+    f.text(x0 + bw + gap + 15, 518, "Needs the experts' answers", 20, True, anchor="start")
+    for j, t in enumerate(("which short code is meant", "what the classes are called", "what a class stands for")):
+        f.text(x0 + bw + gap + 15, 560 + j * 32, t, 19, color=DARK, anchor="start")
+    f.legend(905, [(CLS, "Step done"), (INST, "Step planned")])
+    f.text(W / 2, 940, "Solid frame: exists in the repository. Dashed: planned.", 17, color=MUTED, maxw=W - 90)
+    f.caption("The state of the first step is read from dist/tables/element_classes.csv. The later steps are plans and depend on answers from the subject experts.")
+    f.save()
+
+
 CREDIT = "Figure CC BY 4.0. Numbers read from "
 CREDITS = {
+    "08-ontology-contents": CREDIT + "dist/tables/owl_inventory.csv and element_classes.csv; the ontology is as received from Anja Wutte.",
+    "09-roadmap": CREDIT + "dist/tables/element_classes.csv. The steps after the first are plans.",
+    "01-monument-parts": CREDIT + "dist/tables/element_classes.csv and data/curated/space_functions.csv. Room labels from the plan of Harwa (TT37), digitised by Anja Wutte after Eigner (1984); the plan is not part of the figure.",
+    "02-data-situation": CREDIT + "dist/tables/owl_inventory.csv and data/curated/grammar_rules.csv. The statements on the left are Anja Wutte's assessment of the field.",
+    "05-linking-plan": CREDIT + "dist/tables/owl_inventory.csv and data/curated/space_functions.csv. Match relations and targets are planned.",
     "03-owl-docking": CREDIT + "dist/tables/owl_inventory.csv and element_classes.csv. The ontologies space_layout.owl and id_label.owl are by Georg Suter (TU Wien); licence not yet known.",
     "04-element-classes": CREDIT + "dist/tables/element_classes.csv, converted from the element-class ontology as received.",
     "06-shape-grammar": CREDIT + "data/curated/grammar_rules.csv, transcribed from the shape grammar of Wutte and Duarte (2021).",
-    "07-space-functions": CREDIT + "data/curated/space_functions.csv; c is the cubit, its length in metres is not yet stated.",
+    "07-space-functions": CREDIT + "data/curated/space_functions.csv; c is the cubit (0.5 m).",
 }
 
 FIGURES = [
+    ("01-monument-parts", "V01", fig_monument_parts, "From a monument to its rooms and decoration, shown for Harwa."),
+    ("02-data-situation", "V02", fig_data_situation, "Research data on funerary monuments today, and with a shared model."),
+    ("08-ontology-contents", "V08", fig_ontology_contents, "What the received ontology contains, and what it does not yet contain."),
+    ("09-roadmap", "V09", fig_roadmap, "Four steps from the received ontology to linked data."),
+    ("05-linking-plan", "V05", fig_linking_plan, "How the model's identifiers are meant to link to other sources."),
     ("03-owl-docking", "V03", fig_owl_docking, "The received ontology and how the new modules dock onto it."),
     ("04-element-classes", "V04", fig_element_classes, "Element classes: 105 classes, one tree."),
     ("06-shape-grammar", "V06", fig_shape_grammar, "Shape grammar: 31 rules in five stages, with evidence."),
@@ -430,7 +661,9 @@ FIGURES = [
 def index(entries):
     """docs/visuals/index.html: the figure cards, grouped by what they show."""
     cards = {n: site_kit.fig_card(IMG, n, code, cap, cr) for n, code, cap, cr in entries}
-    groups = [("Ontology", ["03-owl-docking", "04-element-classes"]), ("Shape grammar", ["06-shape-grammar", "07-space-functions"])]
+    groups = [("The six slides", ["02-data-situation", "01-monument-parts", "08-ontology-contents", "09-roadmap", "05-linking-plan", "03-owl-docking"]),
+              ("Backup: the ontology in detail", ["04-element-classes"]),
+              ("Shape grammar (second contribution)", ["06-shape-grammar", "07-space-functions"])]
     body = []
     for i, (title, names) in enumerate(groups, 1):
         body.append(f'<h2 class="step"><span class="n">{i}</span>{site_kit.esc(title)}</h2>')

@@ -208,5 +208,5 @@
 <text x="258.4" y="891" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Width range</text>
 <rect x="399.3" y="880.0" width="22.0" height="22.0" rx="3" fill="#ffffff" stroke="#000000" stroke-width="1"/>
 <text x="431.3" y="891" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Diameter of a column</text>
-<text x="45" y="978" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Table of space functions from the shape grammar, transcribed in data/curated/space_functions.csv; c is the cubit, its length in metres is not yet stated.</text>
+<text x="45" y="978" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Table of space functions from the shape grammar, transcribed in data/curated/space_functions.csv; c is the cubit (0.5 m).</text>
 </svg>

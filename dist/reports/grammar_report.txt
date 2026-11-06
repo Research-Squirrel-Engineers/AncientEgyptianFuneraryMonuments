@@ -1,7 +1,7 @@
 Shape grammar and space functions: findings
 ===========================================
 
-stages 5, rules 31, space functions 23, triples 464
+stages 5, rules 31, space functions 23, triples 467
 
 rules per stage: I 4, II 13, III 8, IV 4, V 2
 

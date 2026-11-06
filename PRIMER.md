@@ -15,7 +15,7 @@ Stand: 2026-11-04.
 | Elementklassen-Ontologie (Manchester-Syntax) | `data/raw/furnishing_funerary_monument_thebes_element_classes.owl` | Eingang, unverändert wie erhalten |
 | Shape Grammar (31 Regeln, 5 Stufen) | `data/curated/grammar_*.csv` | Abschrift aus Grammar.pdf (Wutte und Duarte 2021) |
 | Raumfunktionen mit Maßspannen | `data/curated/space_functions.csv` | Abschrift der Tabelle aus Grammar.pdf, Seite 1 |
-| Zehn Grundrisse, BIM-Abbildungen, Abstract | nicht im Repository | Lizenz ungeklärt (Memo 01, D4), liegen bei Anja und im Chat-ZIP |
+| Zehn Grundrisse, BIM-Abbildungen, Abstract | nicht im Repository | Zeigen erlaubt (Anja, 2026-11-06); Lizenz für abgeleitete Daten ungeklärt, liegen bei Anja und im Chat-ZIP |
 | Memos und Ideen-Dokument | Google Drive, Ordner „Funerals“ | Fragen an Anja, lebendes Ideen-Dokument |
 
 **Nicht neu bauen:** Die 105 Elementklassen und ihre Hierarchie sind Anjas Modell. Wir ergänzen und verankern, wir ersetzen nichts.
@@ -78,7 +78,13 @@ Eigenschaften, die der fertige Stand haben muss:
 | Konvertierung der OWL | Treue Umwandlung mit den Original-IRIs (spacepatterns.com); Umbenennung erst nach Antwort von Anja | Vorschlag 2026-11-04 |
 | Akronym `NephthysStatue` | Zeilenumbruch wird entfernt und im Bericht als Kollision gemeldet, kein Ersatzwert geraten | Vorschlag 2026-11-04 |
 | Abbildung auf CRM | Monument B1, Raum B2, Raumvolumen und Türöffnung B4, Wand B3, Verbindung BP11 mit BP11.2; Szene E36, Text E33 oder E34, Maß E54 | Vorschlag 2026-11-04 |
-| Maßeinheit | Elle (`c`), Länge in Metern offen (Memo 01, C1) | Vorschlag 2026-11-04 |
+| Maßeinheit | Elle (`c`) = 0,5 m, als `aefm-v:lengthInMetres` an der Einheit | 2026-11-06 (Anja) |
+| Umfang des Vortrags | Die Shape Grammar gehört nicht in diesen Vortrag, Anja stellt sie in ihrem zweiten Beitrag vor. Schwerpunkt: ägyptologische Forschungsdaten ohne einheitliches System und mit wenig Anbindung an teilbare Daten | 2026-11-06 (Anja) |
+| Beispielmonument | Harwa (die meisten Raumtypen: Korridore, Vestibül, Antechamber; gut dokumentierte Dekoration), Ankh Hor als Alternative | 2026-11-06 (Anja) |
+| Schreibung der Monumente | Wie in der Datei `tombs` (grün: spätere Zubauten oder Gräber); Daten und Einordnung zeigt Anja in ihren Folien | 2026-11-06 (Anja) |
+| Grundrisse | Dürfen gezeigt werden. Analoge Pläne und Lagepläne: Eigner 1984. Digitalisierte Pläne (Ordner Grundrisse): Anja Wutte | 2026-11-06 (Anja) |
+| Bedeutung von `Owner` | Grabherr oder Grabherrin in verschiedenen Posen und Funktionen (Darstellungstypen, keine Besitzer im rechtlichen Sinn); `God` umfasst Statuen und Abbildungen je nach Unterklasse | 2026-11-06 (Anja) |
+| Referenzvokabulare | Nichts Fachspezifisches vorgegeben, nichts auszulassen; Wikidata und Getty AAT bleiben vorgesehen | 2026-11-06 (Anja) |
 | Lizenz Code | MIT; Figuren CC BY 4.0; Daten und Ontologie: offen | Vorschlag 2026-11-04 |
 | Eingangsdaten im Repository | Nur die OWL und die Abschriften; keine PDFs, keine Grundrisse, solange die Lizenz ungeklärt ist | Vorschlag 2026-11-04 |
 
@@ -115,7 +121,7 @@ Offen: Beantragung des w3id-Eintrags (Pull Request im Repository `perma-id/w3id.
 | S2 | OWL (Manchester) nach Turtle, Klassentabelle, Befundbericht | dieses | S1 | erledigt 2026-11-04 |
 | S2b | Rekonstruierter Platzhalter für `space_layout.owl` und `id_label.owl`, Inventar der OWL | dieses | S2 | erledigt 2026-11-04 |
 | S3 | Grammatik und Raumfunktionen als Daten (Turtle, SKOS) | dieses | S1 | erledigt 2026-11-04 |
-| S4 | Figuren V03, V04, V06, V07 | dieses | S2, S3 | erledigt 2026-11-04 |
+| S4 | Figuren V01 bis V09 (sechs Folien: V02, V01, V08, V09, V05, V03; Backup V04; zweiter Beitrag V06, V07) | dieses | S2, S3 | erledigt 2026-11-06 |
 | S4b | Seiten nach `figure-pages-site`: `py/site_kit.py`, `docs/` (Jekyll), Figurenseite `docs/visuals/` | dieses | S4 | erledigt 2026-11-05 |
 | S5 | Elementklassen bereinigen: Labels, Definitionen, neue IRIs, Namenskorrekturen | dieses | S0, Memo 01 (B, A) | offen |
 | S6 | SKOS-Zwilling der Elementklassen, Alignment Getty AAT und Wikidata | dieses | S5 | offen |
@@ -124,7 +130,7 @@ Offen: Beantragung des w3id-Eintrags (Pull Request im Repository `perma-id/w3id.
 | S9 | Regelanwendung je Monument, Evidenz per SPARQL nachzählen | dieses | S8, Memo 01 (C3) | offen |
 | S10 | SHACL und Metadaten (`wdt-metadata`) | dieses | S7 | offen |
 | S11 | SPARQL-Seite im Browser (`wdt-sparql`) | dieses | S8 | offen |
-| S12 | Figuren V01, V02, V05, V08, V09, V10 | dieses | S6 bis S9 | offen |
+| S12 | Figur V10 | dieses | S6 bis S9 | offen |
 | S13 | Abgleich der zehn Monumente mit Wikidata | dieses | S8 | offen |
 | S14 | w3id beantragen, GitHub Pages | dieses | S0 | offen |
 
@@ -174,15 +180,19 @@ Die IRIs bleiben die von spacepatterns.com, damit die Elementklassen gegen die e
 
 464 Tripel. Die CSV-Abschrift wurde einmal maschinell aus dem Text von Grammar.pdf erzeugt (31 Regeln, Evidenzwerte stimmen mit der Seite überein) und danach von Hand kuratiert. Die Raumfunktionstabelle wurde an der gerenderten Seite 1 abgelesen. Die Bedingungen der Regeln (Längen und Breiten, Funktionsbedingungen) sind noch nicht abgebildet, Memo 01 C5 fragt, ob das nötig ist. Die SKOS-Konzepte tragen Maße als `xsd:decimal`, die Einheit hängt an der IRI `unit/cubit`.
 
-### S4 – Figuren V03, V04, V06, V07
+### S4 – Figuren V01 bis V09
 
-**Ziel:** Vier Figuren im Stil der `visuals` aus GeoScience-FAIRification-LOD (1750×1000, Fira Sans, SVG und PNG, Farbschema).
+**Ziel:** Neun Figuren im Stil der `visuals` aus GeoScience-FAIRification-LOD (1750×1000, Fira Sans, SVG und PNG, Farbschema).
 
-**Abnahme:** `docs/visuals/index.html` zeigt vier Figuren. Texte laufen nicht über ihre Boxen (der Bau bricht sonst ab). Die Figuren ändern sich nur, wenn sich die Tabellen ändern.
+**Abnahme:** `docs/visuals/index.html` zeigt neun Figuren in drei Gruppen. Texte laufen nicht über ihre Boxen (der Bau bricht sonst ab). Die Figuren ändern sich nur, wenn sich die Tabellen ändern.
 
 #### Erledigt 2026-11-04
 
 V03 zeigt die empfangene OWL (die zwei fehlenden Dateien, die 105 Klassen, die Verteilung auf die Ebenen) und wie die neuen Module andocken, durchgezogen was existiert, gestrichelt was geplant oder nicht verfügbar ist; die Zahlen kommen aus `owl_inventory.csv` und `element_classes.csv`. V04 zeigt die 105 Klassen als Baum, V06 die Stufen und Regeln mit Evidenzpunkten, V07 die Raumfunktionen mit Längen- und Breitenbereichen in Ellen. V07 benennt die offenen Stellen der Quelle direkt in der Zeile (Rampe, Achsen, Treppe).
+
+#### Ergänzt 2026-11-06 (Antworten von Anja)
+
+Die Shape Grammar gehört nicht in diesen Vortrag, Anja stellt sie in ihrem zweiten Beitrag vor. Der Einstieg soll niederschwellig sein, entschieden sind sechs Folien: V02 (Datenlage heute gegen ein gemeinsames Modell), V01 (Harwa: Monument, Räume, Dekoration; der Plan selbst kommt als Platzhalter, weil Anja ihn zeigen lässt, er aber nicht im Repository liegt), V08 (was die empfangene Ontologie enthält und was ihr noch fehlt), V09 (Fahrplan in vier Schritten, nur der erste erledigt), V05 (Verknüpfung, alles als geplant gekennzeichnet) und V03 (wie die empfangene OWL und die neuen Module zusammenhängen). V04 bleibt als Backup. V06 und V07 bleiben im Repository und auf der Figurenseite unter „second contribution“. Die Elle ist mit 0,5 m eingetragen.
 
 ### S4b – Seiten (figure-pages-site)
 
@@ -228,8 +238,8 @@ V03 zeigt die empfangene OWL (die zwei fehlenden Dateien, die 105 Klassen, die V
 
 ## Teil D – Offene Punkte
 
-- Antworten auf Memo 01 (siehe Drive-Ordner „Funerals“). Das Memo wird um die Frage nach dem gemeinten Akronym von `NephthysStatue` ergänzt.
-- Originale `space_layout.owl` und `id_label.owl` samt Lizenz: Anfrage an Georg Suter über Anja (Memo 01, Abschnitt F), dazu Zenodo-Supplement prüfen, sobald die Datei vorliegt.
+- Antworten von Anja stehen im Drive-Ordner „Funerals“ (Dokument „Drei Folien“, 2026-11-06). Offen darin: Lizenz der Daten und Grafiken, Nennung der Urheber, doppeltes Kürzel `CO`, Klammer „[67 c)“ bei der Rampe, Regeln 26 bis 29. Das Memo mit den Fragen zur OWL (Akronym `NephthysStatue`, `HouseOFGold`, Götter, BIM) ist noch unbeantwortet.
+- Originale `space_layout.owl` und `id_label.owl` samt Lizenz: Anja kommt derzeit nicht heran (2026-11-06). Die Ontologien sind im Projekt spacepatterns einheitlich für moderne Architektur erstellt und für ihre Gräber angepasst worden; der Server ist nicht erreichbar. Weiter offen: Anfrage direkt an Georg Suter, Zenodo-Supplement prüfen, sobald die Datei vorliegt.
 - Urheberschaft und Lizenz der Elementklassen-OWL und der Abschriften: Sie liegen unter `data/raw` und `data/curated` im Repository, solange die Antwort fehlt.
 - Urheberrechtsvermerk in `LICENSE` und `CITATION.cff`: Anja Wutte und Florian Thiery sind aus dem Dateinamen des Abstracts abgeleitet, ORCIDs fehlen.
 - Format des BIM-Exports (IFC, CSV, JSON) und Beispieldatei.

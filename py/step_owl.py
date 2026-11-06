@@ -196,6 +196,8 @@ def inventory(parsed, rows):
     for g in parsed["disjoint"]:
         inv.append(("disjoint_group", "group", len(g), "pairwise disjoint classes"))
     inv.append(("classes", "declared", len(classes), "including the imported root SpaceElement"))
+    inv.append(("classes", "with label", sum(1 for c in classes.values() for a, _, _ in c["annotations"] if a.endswith("label")), "rdfs:label or skos:prefLabel"))
+    inv.append(("classes", "object or datatype properties", 0, "declared in the file"))
     return inv
 
 

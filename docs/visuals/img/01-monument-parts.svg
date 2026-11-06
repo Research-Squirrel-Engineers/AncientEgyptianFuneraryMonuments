@@ -1,0 +1,97 @@
+<svg width="1750" height="1000" viewBox="0 0 1750 1000" xmlns="http://www.w3.org/2000/svg" role="img"><title>From a monument to its rooms and decoration, shown for Harwa</title>
+<rect width="1750" height="1000" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#55544f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="40" y="48" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#1f1f1d">Plan</text>
+<text x="620" y="48" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#1f1f1d">Monument and rooms</text>
+<text x="1260" y="48" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#1f1f1d">Decoration</text>
+<rect x="40.0" y="85.0" width="520.0" height="480.0" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="300.0" y="270" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="24" font-weight="500" fill="#1f1f1d">Plan of Harwa (TT37)</text>
+<text x="300.0" y="308" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">to be placed on the slide</text>
+<text x="300.0" y="346" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">digitised plan: Anja Wutte</text>
+<text x="300.0" y="384" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">site plans: Eigner 1984</text>
+<text x="40" y="600" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#1f1f1d">From the title block of the plan</text>
+<text x="40" y="632" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="18" fill="#55544f">25th Dynasty, Shabaka and Taharka</text>
+<text x="40" y="660" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="18" fill="#55544f">Asasif North</text>
+<text x="40" y="688" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="18" fill="#55544f">Chief Steward</text>
+<rect x="620.0" y="85.0" width="480.0" height="90.0" rx="6" fill="#166534" stroke="#000000" stroke-width="1"/>
+<text x="860.0" y="114.92" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="26" font-weight="500" fill="#ffffff">Harwa</text>
+<text x="860.0" y="147.16" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#ffffff">TT37, a funerary monument</text>
+<line x1="1020.0" y1="175.0" x2="1020.0" y2="205.0" stroke="#55544f" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<text x="1032" y="190" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="17" font-weight="500" fill="#1f1f1d">has part</text>
+<text x="620" y="218" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#1f1f1d">Rooms, named as on the plan</text>
+<rect x="620.0" y="245.0" width="230.0" height="58.0" rx="6" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="735.0" y="262.4" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="20" font-weight="500" fill="#ffffff">courtyard</text>
+<text x="735.0" y="287.2" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#ffffff">CR</text>
+<rect x="870.0" y="245.0" width="230.0" height="58.0" rx="6" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="985.0" y="262.4" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="20" font-weight="500" fill="#ffffff">vestibul</text>
+<text x="985.0" y="287.2" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#ffffff">VB</text>
+<rect x="620.0" y="317.0" width="230.0" height="58.0" rx="6" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="735.0" y="334.4" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="20" font-weight="500" fill="#ffffff">niche entrance</text>
+<text x="735.0" y="359.2" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#ffffff">NE</text>
+<rect x="870.0" y="317.0" width="230.0" height="58.0" rx="6" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="985.0" y="334.4" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="20" font-weight="500" fill="#ffffff">pillared hall I</text>
+<text x="985.0" y="359.2" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#ffffff">PH</text>
+<rect x="620.0" y="389.0" width="230.0" height="58.0" rx="6" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="735.0" y="406.4" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="20" font-weight="500" fill="#ffffff">pillared hall II</text>
+<text x="735.0" y="431.2" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#ffffff">PH</text>
+<rect x="870.0" y="389.0" width="230.0" height="58.0" rx="6" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="985.0" y="406.4" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="20" font-weight="500" fill="#ffffff">sanctuary</text>
+<text x="985.0" y="431.2" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#ffffff">SY</text>
+<rect x="620.0" y="461.0" width="230.0" height="58.0" rx="6" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="735.0" y="478.4" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="20" font-weight="500" fill="#ffffff">corridor</text>
+<text x="735.0" y="503.2" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#ffffff">CO</text>
+<rect x="1246.0" y="75.0" width="478.0" height="600.0" rx="8" fill="#f6f6f3" stroke="#d8d6ce" stroke-width="1"/>
+<rect x="1260.0" y="90.0" width="450.0" height="56.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1485.0" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">Text</text>
+<rect x="1300.0" y="160.0" width="410.0" height="44.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1505.0" y="182.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#ffffff">FuneraryText</text>
+<rect x="1260.0" y="255.0" width="450.0" height="56.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1485.0" y="283.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="21" font-weight="500" fill="#ffffff">Scene</text>
+<rect x="1300.0" y="325.0" width="410.0" height="44.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1505.0" y="347.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#ffffff">DailyLifeScene</text>
+<rect x="1300.0" y="381.0" width="410.0" height="44.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1505.0" y="403.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#ffffff">FuneraryScene</text>
+<rect x="1300.0" y="437.0" width="410.0" height="44.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1505.0" y="459.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#ffffff">Owner</text>
+<rect x="1340.0" y="493.0" width="370.0" height="44.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1525.0" y="515.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#ffffff">StandingMan</text>
+<rect x="1340.0" y="549.0" width="370.0" height="44.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1525.0" y="571.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#ffffff">SittingMan</text>
+<rect x="1340.0" y="605.0" width="370.0" height="44.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="1525.0" y="627.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#ffffff">KneeingMan</text>
+<line x1="1280.0" y1="146.0" x2="1280.0" y2="182.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1280.0" y1="182.0" x2="1300.0" y2="182.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1280.0" y1="311.0" x2="1280.0" y2="459.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1280.0" y1="347.0" x2="1300.0" y2="347.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1280.0" y1="403.0" x2="1300.0" y2="403.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1280.0" y1="459.0" x2="1300.0" y2="459.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1320.0" y1="481.0" x2="1320.0" y2="627.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1320.0" y1="515.0" x2="1340.0" y2="515.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1320.0" y1="571.0" x2="1340.0" y2="571.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1320.0" y1="627.0" x2="1340.0" y2="627.0" stroke="#55544f" stroke-width="1.3"/>
+<line x1="1100.0" y1="383.0" x2="1246.0" y2="383.0" stroke="#55544f" stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<text x="1173.0" y="362" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" font-weight="500" fill="#1f1f1d">has decoration</text>
+<text x="40" y="725" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" font-weight="500" fill="#1f1f1d">Proposed mapping to CIDOC CRM and CRMba (planned)</text>
+<rect x="40.0" y="755.0" width="402.5" height="84.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="241.25" y="784.24" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#000000">Monument</text>
+<text x="241.25" y="811.52" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#000000">CRMba B1 Built Work</text>
+<rect x="462.5" y="755.0" width="402.5" height="84.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="663.75" y="784.24" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#000000">Room</text>
+<text x="663.75" y="811.52" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#000000">B2 Morphological Building Section</text>
+<rect x="885.0" y="755.0" width="402.5" height="84.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="1086.25" y="784.24" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#000000">Scene</text>
+<text x="1086.25" y="811.52" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#000000">CIDOC CRM E36 Visual Item</text>
+<rect x="1307.5" y="755.0" width="402.5" height="84.0" rx="6" fill="#ffffff" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="1508.75" y="784.24" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#000000">Text</text>
+<text x="1508.75" y="811.52" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#000000">E33 Linguistic Object</text>
+<rect x="530.0" y="894.0" width="22.0" height="22.0" rx="3" fill="#166534" stroke="#000000" stroke-width="1"/>
+<text x="562.0" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Monument</text>
+<rect x="691.3" y="894.0" width="22.0" height="22.0" rx="3" fill="#4c1d95" stroke="#000000" stroke-width="1"/>
+<text x="723.3" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Space function</text>
+<rect x="888.1" y="894.0" width="22.0" height="22.0" rx="3" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="920.0999999999999" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Class</text>
+<rect x="1000.4" y="894.0" width="22.0" height="22.0" rx="3" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<text x="1032.3999999999999" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Planned mapping</text>
+<text x="875.0" y="940" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#55544f">Dashed: planned. The relations have no property in the model yet.</text>
+<text x="45" y="978" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Room labels from the plan of Harwa; classes from the element-class ontology; space-function codes from the grammar's table.</text>
+</svg>

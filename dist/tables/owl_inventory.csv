@@ -15,3 +15,5 @@ disjoint_group,group,14,pairwise disjoint classes
 disjoint_group,group,9,pairwise disjoint classes
 disjoint_group,group,3,pairwise disjoint classes
 classes,declared,105,including the imported root SpaceElement
+classes,with label,0,rdfs:label or skos:prefLabel
+classes,object or datatype properties,0,declared in the file

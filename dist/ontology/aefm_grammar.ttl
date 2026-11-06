@@ -240,6 +240,9 @@ aefm-g:ruleNumber a owl:DatatypeProperty ;
 aefm-g:stageNumber a owl:DatatypeProperty ;
     rdfs:label "stage number"@en .
 
+aefm-v:lengthInMetres a owl:DatatypeProperty ;
+    rdfs:label "length in metres"@en .
+
 <https://w3id.org/aefm/vocab/spaceFunction/antechamber> a skos:Concept ;
     skos:inScheme aefm-v:spaceFunction ;
     skos:notation "AC" ;
@@ -532,7 +535,8 @@ aefm-g:GrammarStage a owl:Class ;
 
 <https://w3id.org/aefm/unit/cubit> a crm:E58_Measurement_Unit ;
     rdfs:label "cubit"@en ;
-    rdfs:comment "Written c in the source. Its length in metres is not yet stated."@en .
+    rdfs:comment "Written c in the source. One cubit is taken as 0.5 m, as stated by Anja Wutte (2026-11-06)."@en ;
+    aefm-v:lengthInMetres 0.5 .
 
 aefm-g:ShapeRule a owl:Class ;
     rdfs:label "Shape rule"@en .

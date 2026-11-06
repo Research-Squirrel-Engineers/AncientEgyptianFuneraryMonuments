@@ -1,0 +1,50 @@
+<svg width="1750" height="1000" viewBox="0 0 1750 1000" xmlns="http://www.w3.org/2000/svg" role="img"><title>Four steps from the received ontology to linked data, and where we stand</title>
+<rect width="1750" height="1000" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#55544f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="40.0" y="200.0" width="380.0" height="100.0" rx="6" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="230.0" y="250.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="28" font-weight="500" fill="#ffffff">Convert</text>
+<circle cx="70.0" cy="200.0" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+<text x="70" y="200" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#1f1f1d">1</text>
+<text x="50" y="345" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">105 classes from Manchester syntax to</text>
+<text x="50" y="375" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">Turtle, original IRIs kept</text>
+<rect x="50.0" y="420.0" width="65.6" height="30.0" rx="6" fill="#166534" stroke="#000000" stroke-width="1"/>
+<text x="82.8" y="435" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="18" font-weight="500" fill="#ffffff">done</text>
+<line x1="424.0" y1="250.0" x2="466.0" y2="250.0" stroke="#55544f" stroke-width="1.8" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<rect x="470.0" y="200.0" width="380.0" height="100.0" rx="6" fill="#e2e8f0" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="660.0" y="250.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="28" font-weight="500" fill="#000000">Clean and describe</text>
+<circle cx="500.0" cy="200.0" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+<text x="500" y="200" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#1f1f1d">2</text>
+<text x="480" y="345" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">1 clashing short code found; labels and</text>
+<text x="480" y="375" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">definitions are missing</text>
+<rect x="480.0" y="420.0" width="91.7" height="30.0" rx="6" fill="#fbbf24" stroke="#000000" stroke-width="1"/>
+<text x="525.85" y="435" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="18" font-weight="500" fill="#000000">planned</text>
+<line x1="854.0" y1="250.0" x2="896.0" y2="250.0" stroke="#55544f" stroke-width="1.8" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<rect x="900.0" y="200.0" width="380.0" height="100.0" rx="6" fill="#e2e8f0" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="1090.0" y="250.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="28" font-weight="500" fill="#000000">Dock onto standards</text>
+<circle cx="930.0" cy="200.0" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+<text x="930" y="200" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#1f1f1d">3</text>
+<text x="910" y="345" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">SKOS concepts, CIDOC CRM and CRMba</text>
+<text x="910" y="375" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">for monuments, rooms and decoration</text>
+<rect x="910.0" y="420.0" width="91.7" height="30.0" rx="6" fill="#fbbf24" stroke="#000000" stroke-width="1"/>
+<text x="955.85" y="435" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="18" font-weight="500" fill="#000000">planned</text>
+<line x1="1284.0" y1="250.0" x2="1326.0" y2="250.0" stroke="#55544f" stroke-width="1.8" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<rect x="1330.0" y="200.0" width="380.0" height="100.0" rx="6" fill="#e2e8f0" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="1520.0" y="250.0" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="28" font-weight="500" fill="#000000">Link</text>
+<circle cx="1360.0" cy="200.0" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+<text x="1360" y="200" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="22" font-weight="500" fill="#1f1f1d">4</text>
+<text x="1340" y="345" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">Wikidata, Getty AAT and the old IRIs as</text>
+<text x="1340" y="375" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" fill="#1f1f1d">references</text>
+<rect x="1340.0" y="420.0" width="91.7" height="30.0" rx="6" fill="#fbbf24" stroke="#000000" stroke-width="1"/>
+<text x="1385.85" y="435" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="18" font-weight="500" fill="#000000">planned</text>
+<rect x="470.0" y="490.0" width="380.0" height="170.0" rx="8" fill="#f6f6f3" stroke="#d8d6ce" stroke-width="1"/>
+<text x="485" y="518" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="20" font-weight="500" fill="#1f1f1d">Needs the experts' answers</text>
+<text x="485" y="560" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#1f1f1d">which short code is meant</text>
+<text x="485" y="592" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#1f1f1d">what the classes are called</text>
+<text x="485" y="624" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#1f1f1d">what a class stands for</text>
+<rect x="705.2" y="894.0" width="22.0" height="22.0" rx="3" fill="#9a3412" stroke="#000000" stroke-width="1"/>
+<text x="737.25" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Step done</text>
+<rect x="861.5" y="894.0" width="22.0" height="22.0" rx="3" fill="#e2e8f0" stroke="#000000" stroke-width="1"/>
+<text x="893.45" y="905" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">Step planned</text>
+<text x="875.0" y="940" text-anchor="middle" dominant-baseline="central" font-family="Fira Sans" font-size="17" fill="#55544f">Solid frame: exists in the repository. Dashed: planned.</text>
+<text x="45" y="978" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="19" fill="#55544f">The state of the first step is read from dist/tables/element_classes.csv. The later steps are plans and depend on answers from the subject experts.</text>
+</svg>

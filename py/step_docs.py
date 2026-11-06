@@ -107,6 +107,8 @@ The original IRIs are kept as references. New resources are planned in their own
                    rng(s["width_min"], s["width_max"]) or (("diameter " + rng(s["diameter_min"], s["diameter_max"])) if s["diameter_min"] else ""),
                    rng(s["angle_min"], s["angle_max"])) for s in spaces]
     grammar = front("Shape grammar", f"{len(rules)} rules in {len(stages)} stages, transcribed from Wutte and Duarte (2021), with the space functions they refer to.") + f"""
+> The shape grammar is not part of the CHNT31 talk on semantic modelling; it is presented in a separate contribution by Anja Wutte. The data are kept here because the model refers to them.
+
 ## Stages
 
 {table(["Stage", "Title", "Rules"], stage_rows)}
@@ -121,7 +123,7 @@ The evidence value is printed in the source as e = n/10 over the ten monuments. 
 
 ## Space functions
 
-Dimensions are in cubits (written c in the source); the length of the cubit in metres is not yet stated. Empty cells are empty in the source.
+Dimensions are in cubits (written c in the source); one cubit is taken as 0.5 m. Empty cells are empty in the source.
 
 {table(["Space function", "Code", "Length (c)", "Width (c)", "Angle (degrees)"], space_rows)}
 

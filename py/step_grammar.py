@@ -114,7 +114,9 @@ def build(stages, rules, spaces):
     g.add((scheme, SKOS.prefLabel, Literal("Space functions of Late Period funerary monuments", lang="en")))
     cubit = URIRef(u.AEFM + "unit/cubit")
     g.add((cubit, RDF.type, CRM.E58_Measurement_Unit)); g.add((cubit, RDFS.label, Literal("cubit", lang="en")))
-    g.add((cubit, RDFS.comment, Literal("Written c in the source. Its length in metres is not yet stated.", lang="en")))
+    g.add((cubit, RDFS.comment, Literal("Written c in the source. One cubit is taken as 0.5 m, as stated by Anja Wutte (2026-11-06).", lang="en")))
+    g.add((V.lengthInMetres, RDF.type, OWL.DatatypeProperty)); g.add((V.lengthInMetres, RDFS.label, Literal("length in metres", lang="en")))
+    g.add((cubit, V.lengthInMetres, dec("0.5")))
     props = {"length_min": "lengthMin", "length_max": "lengthMax", "width_min": "widthMin", "width_max": "widthMax",
              "diameter_min": "diameterMin", "diameter_max": "diameterMax", "angle_min": "angleMin", "angle_max": "angleMax"}
     for s in spaces:
